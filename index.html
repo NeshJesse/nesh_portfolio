@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nehemiah Onyango — Software Engineer, Product Builder</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #FAF9F5;
+    --ink: #1B1A17;
+    --muted: #8B877F;
+    --accent: #4A6D5C;
+    --border: #E4E1D9;
+    --border-strong: #D8D4C9;
+  }
+  *{ scroll-behavior: smooth; }
+  body{
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+  }
+  .font-display{ font-family: 'Space Grotesk', sans-serif; }
+  .font-mono{ font-family: 'IBM Plex Mono', monospace; }
+
+  .fade-in{ opacity: 0; transform: translateY(10px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .fade-in.visible{ opacity: 1; transform: translateY(0); }
+
+  .work-row{
+    border-top: 1px solid var(--border);
+    transition: padding-left 0.25s ease, background 0.25s ease;
+  }
+  .work-row:last-child{ border-bottom: 1px solid var(--border); }
+  .work-row:hover{ padding-left: 12px; background: rgba(74,109,92,0.04); }
+  .work-row:hover .work-arrow{ transform: translateX(4px); opacity: 1; color: var(--accent); }
+  .work-row:hover .work-label{ color: var(--accent); }
+  .work-arrow{ transition: transform 0.25s ease, opacity 0.25s ease, color 0.25s ease; opacity: 0.35; }
+  .work-label{ transition: color 0.25s ease; }
+
+  .case{
+    border: 1px solid var(--border);
+  }
+  .case + .case{ margin-top: -1px; }
+
+  .underline-accent{
+    background-image: linear-gradient(var(--accent), var(--accent));
+    background-size: 0% 1px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: background-size 0.3s ease;
+  }
+  .underline-accent:hover{ background-size: 100% 1px; }
+
+  ::selection{ background: var(--accent); color: var(--bg); }
+
+  @media (prefers-reduced-motion: reduce){
+    .fade-in{ transition: none; opacity: 1; transform: none; }
+    .work-row, .work-arrow, .work-label{ transition: none; }
+  }
+
+  a:focus-visible, button:focus-visible{
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+</style>
+</head>
+<body class="antialiased">
+
+<!-- ============ NAV ============ -->
+<header class="fixed top-0 left-0 right-0 z-40 backdrop-blur-sm" style="background: rgba(250,249,245,0.85); border-bottom: 1px solid var(--border);">
+  <div class="max-w-5xl mx-auto px-6 md:px-10 h-14 flex items-center justify-between">
+    <a href="#top" class="font-mono text-xs tracking-widest" style="color: var(--ink);">N.ONYANGO</a>
+    <nav class="hidden md:flex gap-6 font-mono text-xs" style="color: var(--muted);">
+      <a href="#work" class="underline-accent hover:text-[var(--ink)]">work</a>
+      <a href="#languages" class="underline-accent hover:text-[var(--ink)]">languages</a>
+      <a href="#how-i-think" class="underline-accent hover:text-[var(--ink)]">how i think</a>
+      <a href="#experience" class="underline-accent hover:text-[var(--ink)]">experience</a>
+      <a href="mailto:neshjesse@gmail.com" class="underline-accent hover:text-[var(--ink)]">contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="top" class="max-w-5xl mx-auto px-6 md:px-10 pt-40 pb-24">
+  <p class="font-mono text-xs tracking-widest mb-6" style="color: var(--accent);">SOFTWARE ENGINEER — NAIROBI, KENYA</p>
+  <h1 class="font-display font-medium leading-[1.05] text-4xl md:text-6xl max-w-3xl">
+    Nehemiah Onyango.<br>
+    <span style="color: var(--muted);">Software Engineer.</span><br>
+    <span style="color: var(--muted);">Product Builder.</span>
+  </h1>
+  <p class="mt-8 text-lg md:text-xl max-w-xl leading-relaxed" style="color: var(--ink);">
+   I build software that solves annoyingly specific problems for specific groups of people
+  </p>
+
+  <div class="mt-14 font-mono text-xs" style="color: var(--muted);">
+    <p class="mb-2 tracking-widest">CURRENTLY EXPLORING</p>
+    <p class="text-sm" style="color: var(--ink);">developer tooling · community technology · local-first software · automation</p>
+  </div>
+</section>
+
+<!-- ============ SELECTED WORK NAV ============ -->
+<section id="work" class="max-w-5xl mx-auto px-6 md:px-10 fade-in">
+  <p class="font-mono text-xs tracking-widest mb-4" style="color: var(--muted);">SELECTED WORK</p>
+  <div>
+    <a href="#developer-tools" class="work-row flex items-center justify-between py-5 px-1">
+      <span class="work-label font-display text-xl md:text-2xl">Developer Tools</span>
+      <span class="work-arrow font-mono text-lg">→</span>
+    </a>
+    <a href="#products" class="work-row flex items-center justify-between py-5 px-1">
+      <span class="work-label font-display text-xl md:text-2xl">Products</span>
+      <span class="work-arrow font-mono text-lg">→</span>
+    </a>
+    <a href="#community" class="work-row flex items-center justify-between py-5 px-1">
+      <span class="work-label font-display text-xl md:text-2xl">Community Technology</span>
+      <span class="work-arrow font-mono text-lg">→</span>
+    </a>
+    <a href="#experiments" class="work-row flex items-center justify-between py-5 px-1">
+      <span class="work-label font-display text-xl md:text-2xl">Experiments</span>
+      <span class="work-arrow font-mono text-lg">→</span>
+    </a>
+    <a href="#languages" class="work-row flex items-center justify-between py-5 px-1">
+      <span class="work-label font-display text-xl md:text-2xl">Languages</span>
+      <span class="work-arrow font-mono text-lg">→</span>
+    </a>
+    <a href="#how-i-think" class="work-row flex items-center justify-between py-5 px-1">
+      <span class="work-label font-display text-xl md:text-2xl">How I Think</span>
+      <span class="work-arrow font-mono text-lg">→</span>
+    </a>
+    <a href="#experience" class="work-row flex items-center justify-between py-5 px-1">
+      <span class="work-label font-display text-xl md:text-2xl">Experience</span>
+      <span class="work-arrow font-mono text-lg">→</span>
+    </a>
+  </div>
+</section>
+
+<!-- ============ DEVELOPER TOOLS ============ -->
+<section id="developer-tools" class="max-w-5xl mx-auto px-6 md:px-10 pt-28 pb-8 fade-in">
+  <p class="font-mono text-xs tracking-widest mb-3" style="color: var(--accent);">01 · DEVELOPER TOOLS</p>
+  <h2 class="font-display text-3xl md:text-4xl max-w-2xl mb-4">Software built to make other software easier to build.</h2>
+  <p class="max-w-xl leading-relaxed" style="color: var(--muted);">This is the part that doesn't ship to users — it ships to me. It's usually the fastest way to tell if I actually understand a workflow, because I have no one to blame if it's wrong.</p>
+</section>
+
+<div class="max-w-5xl mx-auto px-6 md:px-10 pb-20 fade-in">
+
+  <!-- Portfolio Ops -->
+  <div class="case p-8 md:p-10">
+    <div class="flex items-baseline justify-between flex-wrap gap-2 mb-6">
+      <h3 class="font-display text-2xl">Portfolio Ops</h3>
+      <a href="https://github.com/NeshJesse/portfolio_ops" target="_blank" class="font-mono text-xs underline-accent" style="color: var(--muted);">github ↗</a>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <p class="font-mono text-xs tracking-widest mb-2" style="color: var(--accent);">PROBLEM</p>
+        <p class="leading-relaxed">Updating my portfolio was surprisingly repetitive. Every new project meant editing markdown, swapping screenshots, committing, and deploying — the same five steps, every time, done by hand.</p>
+      </div>
+      <div>
+        <p class="font-mono text-xs tracking-widest mb-2" style="color: var(--accent);">SOLUTION</p>
+        <p class="leading-relaxed">A Python CLI that abstracts the whole workflow — content updates, branching, commits, optional pushes — into single, deterministic commands. Opinionated enough to stay consistent, extensible enough to grow.</p>
+      </div>
+      <div>
+        <p class="font-mono text-xs tracking-widest mb-2" style="color: var(--accent);">RESULT</p>
+        <p class="leading-relaxed">Updating my portfolio went from a fifteen-minute chore to a single command. Laid groundwork for CI/CD hooks and GitHub API integrations I haven't built yet.</p>
+      </div>
+      <div>
+        <p class="font-mono text-xs tracking-widest mb-2" style="color: var(--accent);">LESSON</p>
+        <p class="leading-relaxed">Developer experience is a product. If a tool only has one user, it still deserves the same care as one that has thousands.</p>
+      </div>
+    </div>
+    <p class="font-mono text-xs mt-8" style="color: var(--muted);">Python · CLI tooling · Git automation</p>
+  </div>
+
+  <!-- DevBrief -->
+  <div class="case p-8 md:p-10">
+    <div class="flex items-baseline justify-between flex-wrap gap-2 mb-6">
+      <h3 class="font-display text-2xl">DevBrief</h3>
+      <a href="https://github.com/NeshJesse/brief_bird" target="_blank" class="font-mono text-xs underline-accent" style="color: var(--muted);">github ↗</a>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <p class="font-mono text-xs tracking-widest mb-2" style="color: var(--accent);">PROBLEM</p>
+        <p class="leading-relaxed">I had too many side projects living on disk — some active, some abandoned, some I'd genuinely forgotten existed. No single place told me the truth about any of them.</p>
+      </div>
+      <div>
+        <p class="font-mono text-xs tracking-widest mb-2" style="color: var(--accent);">SOLUTION</p>
+        <p class="leading-relaxed">A Flutter desktop app that indexes local projects automatically, using signature-based detection to identify frameworks and project types straight from the file structure, backed by a Drift/SQLite metadata store tracking lifecycle and Git health over time.</p>
+      </div>
+      <div>
+        <p class="font-mono text-xs tracking-widest mb-2" style="color: var(--accent);">RESULT</p>
+        <p class="leading-relaxed">A daily-briefing interface, closer to an intelligence dashboard than a file browser, that surfaces what's dormant, what's active, and what's quietly decaying — plus auto-generated portfolio artifacts from real project data instead of manual writing.</p>
+      </div>
+      <div>
+        <p class="font-mono text-xs tracking-widest mb-2" style="color: var(--accent);">LESSON</p>
+        <p class="leading-relaxed">Your filesystem already contains valuable product intelligence. Most developers just never build the thing that reads it back to them.</p>
+      </div>
+    </div>
+    <p class="font-mono text-xs mt-8" style="color: var(--muted);">Flutter · Drift · SQLite</p>
+  </div>
+
+</div>
+
+<!-- ============ PRODUCTS ============ -->
+<section id="products" class="max-w-5xl mx-auto px-6 md:px-10 pt-20 pb-8 fade-in">
+  <p class="font-mono text-xs tracking-widest mb-3" style="color: var(--accent);">02 · PRODUCTS</p>
+  <h2 class="font-display text-3xl md:text-4xl max-w-2xl mb-4">Software built for people outside my terminal.</h2>
+  <p class="max-w-xl leading-relaxed" style="color: var(--muted);">These start the same way the tools do — something annoyed me — but the person who has to live with the result isn't only me anymore.</p>
+</section>
+
+<div class="max-w-5xl mx-auto px-6 md:px-10 pb-20 fade-in">
+
+  <!-- SlipKitchen -->
+  <div class="case p-8 md:p-10">
+    <h3 class="font-display text-2xl mb-6">SlipKitchen</h3>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <p class="font-mono text-xs tracking-widest mb-2" style="color: var(--accent);">PROBLEM</p>
+        <p class="leading-relaxed">Sports bettors track prediction slips in notes apps and spreadsheets, then never actually learn from their own history. There was no structured way to see which reasoning patterns were working and which ones were just noise.</p>
+      </div>
+      <div>
+        <p class="font-mono text-xs tracking-widest mb-2" style="color: var(--accent);">ARCHITECTURE</p>
+        <p class="leading-relaxed">A local-first data model in IndexedDB via Dexie, storing slips, prediction types, rationale, and whitelist/blacklist teams alongside historical outcomes — fully stateful, persisted client-side for speed and reliability, no backend round-trip required.</p>
+      </div>
+      <div>
+        <p class="font-mono text-xs tracking-widest mb-2" style="color: var(--accent);">OUTCOME</p>
+        <p class="leading-relaxed">A performance analytics view that surfaces which prediction patterns actually perform per league, plus structured note-taking that forces reasoning to be written down before the outcome is known — and export tools for sharing slips in social-friendly formats.</p>
+      </div>
+      <div>
+        <p class="font-mono text-xs tracking-widest mb-2" style="color: var(--accent);">LESSON</p>
+        <p class="leading-relaxed">People don't lack data, they lack a forcing function to record their reasoning before they know if they were right. That's a harder product problem than it looks.</p>
+      </div>
+    </div>
+    <p class="font-mono text-xs mt-8" style="color: var(--muted);">React · IndexedDB / Dexie.js</p>
+  </div>
+
+  <!-- NudgeMate -->
+  <div class="case p-8 md:p-10">
+    <div class="flex items-baseline justify-between flex-wrap gap-2 mb-6">
+      <h3 class="font-display text-2xl">NudgeMate</h3>
+      <span class="font-mono text-xs" style="color: var(--muted);">in progress</span>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <p class="font-mono text-xs tracking-widest mb-2" style="color: var(--accent);">PROBLEM</p>
+        <p class="leading-relaxed">Goals die quietly. Not from one bad decision, but from thousands of small moments where nobody reminded you what you were actually working toward.</p>
+      </div>
+      <div>
+        <p class="font-mono text-xs tracking-widest mb-2" style="color: var(--accent);">SOLUTION</p>
+        <p class="leading-relaxed">A goal and dream reminder app that sends motivational push notifications and deliberately well-written notes, designed to keep people accountable to the version of themselves they set the goal for in the first place.</p>
+      </div>
+    </div>
+    <p class="font-mono text-xs mt-8" style="color: var(--muted);">React Native / Expo · Push notifications</p>
+  </div>
+
+</div>
+
+<!-- ============ COMMUNITY TECHNOLOGY ============ -->
+<section id="community" class="max-w-5xl mx-auto px-6 md:px-10 pt-20 pb-8 fade-in">
+  <p class="font-mono text-xs tracking-widest mb-3" style="color: var(--accent);">03 · COMMUNITY TECHNOLOGY</p>
+  <h2 class="font-display text-3xl md:text-4xl max-w-2xl mb-4">Impact that doesn't fit a startup pitch.</h2>
+</div>
+
+<div class="max-w-5xl mx-auto px-6 md:px-10 pb-20 fade-in">
+  <div class="case p-8 md:p-10">
+    <h3 class="font-display text-2xl mb-6">SaMaFa Prosperity Foundation — Data & Documentation</h3>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <p class="font-mono text-xs tracking-widest mb-2" style="color: var(--accent);">WHAT I BUILT</p>
+        <p class="leading-relaxed">Turned a 175-response community survey into a ranked business-opportunity report with a 90-day validation plan, and a separate 102-respondent EXPO survey into a formatted strategic report — both used directly for decision-making, not filed away.</p>
+      </div>
+      <div>
+        <p class="font-mono text-xs tracking-widest mb-2" style="color: var(--accent);">COMMUNITY PROFILER</p>
+        <p class="leading-relaxed">Specified an internal tool to parse SaMaFa's 42-column Google Form dataset into structured community profiles — full PRD and parser spec, built to turn a messy form export into a reusable data pipeline.</p>
+      </div>
+    </div>
+    <p class="font-mono text-xs mt-8" style="color: var(--muted);">Data analysis · Reporting · Documentation</p>
+  </div>
+</div>
+
+<!-- ============ EXPERIMENTS ============ -->
+<section id="experiments" class="max-w-5xl mx-auto px-6 md:px-10 pt-20 pb-8 fade-in">
+  <p class="font-mono text-xs tracking-widest mb-3" style="color: var(--accent);">04 · EXPERIMENTS</p>
+  <h2 class="font-display text-3xl md:text-4xl max-w-2xl mb-4">Not everything worked. That's kind of the point.</h2>
+  <p class="max-w-xl leading-relaxed" style="color: var(--muted);">This section exists so the rest of the page doesn't look like a highlight reel. Some of these are unfinished on purpose.</p>
+</section>
+
+<div class="max-w-5xl mx-auto px-6 md:px-10 pb-20 grid md:grid-cols-2 gap-6 fade-in">
+  <div class="case p-7">
+    <p class="font-mono text-xs tracking-widest mb-3" style="color: var(--accent);">TRANSIT ADVERTISING</p>
+    <h3 class="font-display text-xl mb-3">UbiqueAds</h3>
+    <p class="leading-relaxed text-sm" style="color: var(--muted);">Headrest advertising for matatu routes across Nairobi and Kiambu — pitch deck, a lightweight CRM built on Google Forms, and the routes page that made the inventory legible to advertisers for the first time.</p>
+  </div>
+  <div class="case p-7">
+    <p class="font-mono text-xs tracking-widest mb-3" style="color: var(--accent);">FIRST STARTUP</p>
+    <h3 class="font-display text-xl mb-3">ATM Banking Concept</h3>
+    <p class="leading-relaxed text-sm" style="color: var(--muted);">My earliest real attempt at a startup — a banking-tech idea meant to change how people interact with ATMs. It didn't work. It's also the reason everything after it got built with more discipline.</p>
+  </div>
+  <div class="case p-7">
+    <p class="font-mono text-xs tracking-widest mb-3" style="color: var(--accent);">RELATIONSHIP INTELLIGENCE</p>
+    <h3 class="font-display text-xl mb-3">Dossier</h3>
+    <p class="leading-relaxed text-sm" style="color: var(--muted);">A personal CRM aimed at executive assistants and chiefs of staff at family offices. Currently in concierge-MVP validation — a five-stage funnel and discovery scripts before a line of product code gets written.</p>
+  </div>
+  <div class="case p-7">
+    <p class="font-mono text-xs tracking-widest mb-3" style="color: var(--accent);">CREATOR ECONOMY</p>
+    <h3 class="font-display text-xl mb-3">Creator Brand Valuation</h3>
+    <p class="leading-relaxed text-sm" style="color: var(--muted);">A concept SaaS scoring creators on reach quality, audience fit, content credibility, and commercial track record, using Phyllo for data aggregation. Still in the idea's early, unglamorous stage.</p>
+  </div>
+</div>
+
+<!-- ============ LANGUAGES ============ -->
+<section id="languages" class="max-w-5xl mx-auto px-6 md:px-10 pt-20 pb-24 fade-in">
+  <p class="font-mono text-xs tracking-widest mb-3" style="color: var(--accent);">05 · LANGUAGES</p>
+  <h2 class="font-display text-3xl md:text-4xl max-w-2xl mb-4">Tools, not trophies.</h2>
+  <p class="max-w-xl leading-relaxed mb-12" style="color: var(--muted);">Not years of experience — what I actually reach for, and why.</p>
+
+  <div class="grid md:grid-cols-2 gap-x-12 gap-y-10">
+    <div style="border-top: 1px solid var(--border);" class="pt-5">
+      <h3 class="font-display text-xl mb-3">JavaScript</h3>
+      <p class="text-sm leading-relaxed" style="color: var(--muted);">Ship fast, iterate live. React, Next.js, Redux — the default when a product needs a browser and needs it now.</p>
+    </div>
+    <div style="border-top: 1px solid var(--border);" class="pt-5">
+      <h3 class="font-display text-xl mb-3">Python</h3>
+      <p class="text-sm leading-relaxed" style="color: var(--muted);">Automation, developer tooling, data processing. Reached for when the problem is "I keep doing this by hand."</p>
+    </div>
+    <div style="border-top: 1px solid var(--border);" class="pt-5">
+      <h3 class="font-display text-xl mb-3">Dart / Flutter</h3>
+      <p class="text-sm leading-relaxed" style="color: var(--muted);">Desktop and cross-platform tooling — DevBrief runs entirely on it. Good for software that has to feel local and immediate.</p>
+    </div>
+    <div style="border-top: 1px solid var(--border);" class="pt-5">
+      <h3 class="font-display text-xl mb-3">SQL</h3>
+      <p class="text-sm leading-relaxed" style="color: var(--muted);">Data modeling. Where I think through what a system actually needs to remember before I write a line of application code.</p>
+    </div>
+    <div style="border-top: 1px solid var(--border);" class="pt-5">
+      <h3 class="font-display text-xl mb-3">C / C++</h3>
+      <p class="text-sm leading-relaxed" style="color: var(--muted);">Systems curiosity. Less a daily tool, more where I go when I want to understand what's happening underneath the abstraction.</p>
+    </div>
+    <div style="border-top: 1px solid var(--border);" class="pt-5">
+      <h3 class="font-display text-xl mb-3">Currently stretching into</h3>
+      <p class="text-sm leading-relaxed" style="color: var(--muted);">IoT and hardware — the layer below the software I usually write, and the part of the stack I understand the least.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW I THINK ============ -->
+<section id="how-i-think" class="max-w-5xl mx-auto px-6 md:px-10 pt-8 pb-28 fade-in">
+  <div style="border-top: 1px solid var(--border-strong);" class="pt-16">
+    <p class="font-mono text-xs tracking-widest mb-8" style="color: var(--accent);">HOW I THINK</p>
+    <div class="max-w-2xl font-display text-2xl md:text-3xl leading-[1.35]" style="color: var(--ink);">
+      <p class="mb-6">I don't build software because software is interesting.</p>
+      <p class="mb-6">I build software because repetitive work annoys me.</p>
+      <p class="mb-6" style="color: var(--muted);">If I repeat something enough, I automate it. If I can't explain a decision, I build a system that records it. If a workflow feels broken, I redesign it.</p>
+      <p class="mb-6" style="color: var(--muted);">Most of what's above started because something frustrated me. Eventually, the frustration became software.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience" class="max-w-5xl mx-auto px-6 md:px-10 pb-28 fade-in">
+  <p class="font-mono text-xs tracking-widest mb-3" style="color: var(--accent);">06 · EXPERIENCE</p>
+  
+
+  <div class="grid md:grid-cols-2 gap-12">
+
+    <div>
+      <p class="font-mono text-xs tracking-widest mb-4" style="color: var(--muted);">WORK</p>
+      <div style="border-top: 1px solid var(--border);" class="pt-4">
+        <div class="flex justify-between items-baseline">
+          <h3 class="font-display text-lg">Forward Deployed Engineer and Data Analyst</h3>
+          <span class="font-mono text-xs" style="color: var(--muted);">March 2026 – Present</span>
+        </div>
+        <p class="text-sm mt-1 mb-3" style="color: var(--accent);">SaMaFa Prosperity Foundation</p>
+        <p class="text-sm leading-relaxed" style="color: var(--muted);">Currently working as a forward deployed enginner to 
+         built internal tools to solve real-world problems through data analysis and software engineering on the field and on the go.
+        </p>
+      </div>
+      <div style="border-top: 1px solid var(--border);" class="pt-4 mb-6">
+        <div class="flex justify-between items-baseline">
+          <h3 class="font-display text-lg">Software Engineer Intern</h3>
+          <span class="font-mono text-xs" style="color: var(--muted);">OCT 2025 – FEB 2026</span>
+        </div>
+        <p class="text-sm mt-1 mb-3" style="color: var(--accent);">Marsoney Labs</p>
+        <p class="text-sm leading-relaxed" style="color: var(--muted);">Built a web-based project management tool with React, Next.js, and Redux 
+          for state management. Implemented user authentication and authorization using JWT and OAuth.
+        Translated Figma designs into functional, user-friendly interfaces</p>
+      </div>
+      
+    </div>
+    <div>
+      <p class="font-mono text-xs tracking-widest mb-4" style="color: var(--muted);">EDUCATION</p>
+      <div style="border-top: 1px solid var(--border);" class="pt-4 mb-6">
+        <div class="flex justify-between items-baseline">
+          <h3 class="font-display text-lg">Software Engineering Bootcamp</h3>
+          <span class="font-mono text-xs" style="color: var(--muted);">02/2024 – 05/2024</span>
+        </div>
+        <p class="text-sm mt-1" style="color: var(--accent);">PLP Academy — PLP Africa Scholarship</p>
+      </div>
+      <div style="border-top: 1px solid var(--border);" class="pt-4">
+        <h3 class="font-display text-lg">B.Sc. Software Engineering</h3>
+        <p class="text-sm mt-1" style="color: var(--accent);">Jomo Kenyatta University of Agriculture and Technology</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mx-auto max-w-8xl px-5 py-24 sm:px-8 lg:px-12 lg:py-36">
+
+  <div class="max-w-4xl">
+
+    <p class="font-mono text-xs uppercase tracking-[0.18em] text-muted">
+      What's next?
+    </p>
+
+    <h2 class="mt-7 font-mono text-4xl font-medium leading-[1.1] tracking-[-0.05em] sm:text-5xl lg:text-6xl">
+      I'm interested in difficult problems,
+      ambitious teams, and things that
+      probably shouldn't exist yet.
+    </h2>
+
+    <div class="mt-10">
+
+      <a
+        href="#contact"
+        class="line-link font-mono text-sm"
+      >
+        → Let's talk
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ============ FOOTER ============ -->
+<footer style="border-top: 1px solid var(--border);">
+  <div class="max-w-5xl mx-auto px-6 md:px-10 py-16">
+    <p class="font-mono text-xs tracking-widest mb-6" style="color: var(--muted);">CONTACT</p>
+    <div class="flex flex-wrap gap-x-8 gap-y-3 font-mono text-sm mb-12">
+      <a href="mailto:neshjesse@gmail.com" class="underline-accent" style="color: var(--ink);">neshjesse@gmail.com</a>
+      <a href="https://github.com/NeshJesse" target="_blank" class="underline-accent" style="color: var(--ink);">github.com/NeshJesse</a>
+      <a href="tel:+254702337041" class="underline-accent" style="color: var(--ink);">+254 702 337 041</a>
+    </div>
+    <p class="font-mono text-xs" style="color: var(--muted);">© 2026 · Nehemiah Onyango · Juja, Kiambu</p>
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting){
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08 });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

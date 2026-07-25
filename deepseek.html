@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nehemiah Onyango · Portfolio</title>
+  <!-- Tailwind + Inter font -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+  <style>
+    * { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    body { background: #faf9f8; color: #1a1a1a; }
+    .link-underline { position: relative; }
+    .link-underline::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0%;
+      height: 1.5px;
+      background: #1a1a1a;
+      transition: width 0.2s ease;
+    }
+    .link-underline:hover::after { width: 100%; }
+    .text-muted { color: #5a5a5a; }
+    .card-border { border: 1px solid rgba(0,0,0,0.05); }
+    .bg-warm { background: #faf9f8; }
+    .hover-lift { transition: all 0.15s ease; }
+    .hover-lift:hover { transform: translateY(-2px); }
+    .progress-bar { background: #e6e5e4; border-radius: 40px; height: 4px; width: 100%; }
+    .progress-fill { background: #1a1a1a; height: 4px; border-radius: 40px; }
+  </style>
+</head>
+<body class="bg-warm antialiased">
+
+  <!-- ====== shared nav (included on every page) ====== -->
+  <nav class="max-w-3xl mx-auto px-6 pt-8 pb-2 flex items-center justify-between text-sm">
+    <a href="index.html" class="font-medium tracking-tight text-black/80 hover:text-black">Nehemiah Onyango</a>
+    <div class="flex gap-5 text-muted/70">
+      <a href="how-i-think.html" class="hover:text-black transition">How I Think</a>
+      <a href="projects.html" class="hover:text-black transition">Projects</a>
+      <a href="experience.html" class="hover:text-black transition">Experience</a>
+    </div>
+  </nav>
+
+  <!-- ====== MAIN: index.html ====== -->
+  <div class="max-w-3xl mx-auto px-6 py-6 md:py-10">
+
+    <!-- hero -->
+    <header class="mb-12">
+      <h1 class="text-4xl md:text-5xl font-semibold tracking-tight leading-[1.1]">Nehemiah Onyango</h1>
+      <div class="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-lg md:text-xl font-medium text-muted">
+        <span>Software Engineer</span>
+        <span class="hidden sm:inline text-muted/30">·</span>
+        <span>Product Builder</span>
+        <span class="hidden sm:inline text-muted/30">·</span>
+        <span class="text-sm font-normal text-muted/80">I build software that solves annoyingly specific problems.</span>
+      </div>
+      <p class="mt-3 text-sm text-muted/70 max-w-xl leading-relaxed">
+        Currently exploring developer tooling, advertising systems, community technology, and local-first software.
+      </p>
+    </header>
+
+    <!-- currently building -->
+    <section class="mb-14">
+      <div class="bg-white rounded-2xl p-6 shadow-sm border card-border hover:shadow-md transition-shadow duration-200">
+        <div class="flex items-start justify-between">
+          <div>
+            <p class="text-xs font-medium uppercase tracking-wider text-muted/60">Currently Building</p>
+            <h2 class="text-xl font-semibold mt-1 tracking-tight">DevBrief</h2>
+            <div class="flex items-center gap-3 mt-1">
+              <span class="text-sm text-muted/80">local-first OS for developers</span>
+              <span class="text-xs bg-black/5 px-2 py-0.5 rounded-full text-muted/70">82%</span>
+            </div>
+            <div class="progress-bar mt-3 max-w-xs">
+              <div class="progress-fill" style="width:82%"></div>
+            </div>
+            <p class="text-xs text-muted/60 mt-3 flex items-center gap-1">
+              <span>Updated 2 days ago</span>
+              <span class="mx-1">·</span>
+              <a href="devbrief.html" class="link-underline text-black/70 hover:text-black text-xs font-medium">→ View Build Log</a>
+            </p>
+          </div>
+          <div class="w-2 h-2 rounded-full bg-emerald-400/70 mt-1.5"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- selected work navigation -->
+    <section class="mb-14">
+      <p class="text-xs font-medium uppercase tracking-wider text-muted/50 mb-5">Selected Work</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-base">
+        <a href="projects.html#devtools" class="group flex items-center justify-between border-b border-black/5 py-2.5 hover:border-black/30 transition-colors">
+          <span class="font-medium">Developer Tools</span>
+          <span class="text-muted/40 group-hover:text-black/70 transition-colors">automation &amp; DX →</span>
+        </a>
+        <a href="projects.html#products" class="group flex items-center justify-between border-b border-black/5 py-2.5 hover:border-black/30 transition-colors">
+          <span class="font-medium">Products</span>
+          <span class="text-muted/40 group-hover:text-black/70 transition-colors">things people use →</span>
+        </a>
+        <a href="projects.html#community" class="group flex items-center justify-between border-b border-black/5 py-2.5 hover:border-black/30 transition-colors">
+          <span class="font-medium">Community Tech</span>
+          <span class="text-muted/40 group-hover:text-black/70 transition-colors">impact software →</span>
+        </a>
+        <a href="projects.html#experiments" class="group flex items-center justify-between border-b border-black/5 py-2.5 hover:border-black/30 transition-colors">
+          <span class="font-medium">Experiments</span>
+          <span class="text-muted/40 group-hover:text-black/70 transition-colors">weird ideas →</span>
+        </a>
+        <a href="writing.html" class="group flex items-center justify-between border-b border-black/5 py-2.5 hover:border-black/30 transition-colors">
+          <span class="font-medium">Writing</span>
+          <span class="text-muted/40 group-hover:text-black/70 transition-colors">engineering notes →</span>
+        </a>
+        <a href="experience.html" class="group flex items-center justify-between border-b border-black/5 py-2.5 hover:border-black/30 transition-colors">
+          <span class="font-medium">Experience</span>
+          <span class="text-muted/40 group-hover:text-black/70 transition-colors">resume →</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- featured project: Portfolio-Ops -->
+    <section class="mb-14">
+      <div class="bg-white/70 rounded-2xl p-6 border card-border">
+        <div class="flex flex-wrap items-start justify-between gap-2">
+          <div>
+            <span class="text-xs font-medium uppercase tracking-wider text-muted/50">Featured</span>
+            <h3 class="text-xl font-semibold mt-0.5">Portfolio-Ops</h3>
+            <p class="text-sm text-muted/80 max-w-md mt-1 leading-relaxed">
+              A Python CLI that treats portfolios like production software — scans repos, generates metadata, commits &amp; deploys.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-3">
+              <span class="text-xs bg-black/5 px-3 py-1 rounded-full text-muted/70">Python</span>
+              <span class="text-xs bg-black/5 px-3 py-1 rounded-full text-muted/70">CLI</span>
+              <span class="text-xs bg-black/5 px-3 py-1 rounded-full text-muted/70">automation</span>
+            </div>
+          </div>
+          <a href="portfolio-ops.html" class="text-sm font-medium text-black/70 hover:text-black flex items-center gap-1 mt-1 sm:mt-0">
+            View project <span class="text-lg leading-none">→</span>
+          </a>
+        </div>
+        <div class="mt-4 pt-4 border-t border-black/5 text-xs text-muted/60">
+          <span class="font-medium text-muted/80">Why:</span> I hated manually updating my portfolio. Now it takes one command.
+        </div>
+      </div>
+    </section>
+
+    <!-- How I think preview -->
+    <section class="mb-14">
+      <div class="border-l-2 border-black/20 pl-5">
+        <p class="text-xs font-medium uppercase tracking-wider text-muted/50">How I Think</p>
+        <blockquote class="text-base md:text-lg font-light text-muted/90 leading-relaxed mt-1">
+          “If I repeat something three times, I automate it.<br />
+          If I can’t explain a decision, I build a system that records it.<br />
+          If something annoys me long enough, it eventually becomes a product.”
+        </blockquote>
+        <a href="how-i-think.html" class="inline-block mt-3 text-sm font-medium text-black/70 hover:text-black link-underline">Read more →</a>
+      </div>
+    </section>
+
+    <!-- languages -->
+    <section class="mb-14">
+      <p class="text-xs font-medium uppercase tracking-wider text-muted/50 mb-4">Languages</p>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-3 text-sm">
+        <div><span class="font-medium">Python</span> <span class="text-muted/60">· automation, CLIs, data</span></div>
+        <div><span class="font-medium">JavaScript</span> <span class="text-muted/60">· web apps, product interfaces</span></div>
+        <div><span class="font-medium">Dart</span> <span class="text-muted/60">· desktop software</span></div>
+        <div><span class="font-medium">SQL</span> <span class="text-muted/60">· data modeling</span></div>
+        <div><span class="font-medium">C/C++</span> <span class="text-muted/60">· systems curiosity</span></div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="pt-8 border-t border-black/10 text-sm text-muted/60 flex flex-wrap items-center justify-between gap-4">
+      <div class="flex gap-4">
+        <a href="https://github.com/NeshJesse" class="hover:text-black transition-colors">GitHub</a>
+        <a href="mailto:neshjesse@gmail.com" class="hover:text-black transition-colors">Email</a>
+      </div>
+      <span class="text-xs">© 2026 · built with curiosity</span>
+    </footer>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- ====== PAGE 2: how-i-think.html ====== -->
+  <!-- (hidden from normal flow, but available via link) -->
+  <div style="display:none;">
+    <div id="how-i-think">
+      <div class="max-w-3xl mx-auto px-6 py-12">
+        <h1 class="text-4xl font-semibold tracking-tight">How I Think</h1>
+        <div class="mt-8 space-y-6 text-base leading-relaxed text-muted/90 max-w-2xl">
+          <p><span class="font-medium text-black">I don’t enjoy building software for the sake of software.</span> I like noticing repetitive work.</p>
+          <p>• If I repeat something three times, I automate it.</p>
+          <p>• If I can’t explain a decision, I build a system that records it.</p>
+          <p>• If something annoys me long enough, it eventually becomes a product.</p>
+          <p class="mt-6">My projects are not just code — they are answers to frustrations. SlipKitchen started because I wanted to track why my betting predictions failed. Portfolio-Ops because I hated updating my site manually. DevBrief because I have over 70 unfinished side projects and needed a dashboard to keep them alive.</p>
+          <p>I design workflows, model data, choose architecture, and then build. That’s what early-stage startups need: someone who can define <span class="italic">what</span> to build as well as <span class="italic">how</span> to build it.</p>
+        </div>
+        <a href="index.html" class="inline-block mt-8 text-sm font-medium text-black/70 hover:text-black link-underline">← back</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== PAGE 3: projects.html (aggregator) ====== -->
+  <div style="display:none;">
+    <div id="projects">
+      <div class="max-w-3xl mx-auto px-6 py-12">
+        <h1 class="text-4xl font-semibold tracking-tight">Projects</h1>
+        <div class="mt-8 space-y-12">
+          <!-- dev tools -->
+          <div id="devtools">
+            <h2 class="text-xl font-medium border-b border-black/10 pb-2">Developer Tools</h2>
+            <div class="mt-4 space-y-6">
+              <div><a href="portfolio-ops.html" class="font-semibold text-black/80 hover:text-black">Portfolio-Ops</a><span class="text-sm text-muted/60 ml-2">Python CLI · automation</span><p class="text-sm text-muted/70 mt-0.5">Scans repos, generates metadata, commits & deploys.</p></div>
+              <div><a href="devbrief.html" class="font-semibold text-black/80 hover:text-black">DevBrief</a><span class="text-sm text-muted/60 ml-2">Flutter · local-first</span><p class="text-sm text-muted/70 mt-0.5">Intelligence dashboard for side projects.</p></div>
+            </div>
+          </div>
+          <!-- products -->
+          <div id="products">
+            <h2 class="text-xl font-medium border-b border-black/10 pb-2">Products</h2>
+            <div class="mt-4 space-y-6">
+              <div><a href="slipkitchen.html" class="font-semibold text-black/80 hover:text-black">SlipKitchen</a><span class="text-sm text-muted/60 ml-2">React · Dexie</span><p class="text-sm text-muted/70 mt-0.5">Decision intelligence for sports betting.</p></div>
+            </div>
+          </div>
+          <!-- community -->
+          <div id="community">
+            <h2 class="text-xl font-medium border-b border-black/10 pb-2">Community Tech</h2>
+            <div class="mt-4 space-y-6">
+              <div><span class="font-semibold text-black/80">SAMAFA Profiler</span><span class="text-sm text-muted/60 ml-2">data · impact</span><p class="text-sm text-muted/70 mt-0.5">Community registration → actionable insights.</p></div>
+            </div>
+          </div>
+          <!-- experiments -->
+          <div id="experiments">
+            <h2 class="text-xl font-medium border-b border-black/10 pb-2">Experiments</h2>
+            <div class="mt-4 space-y-6">
+              <div><span class="font-semibold text-black/80">UbiqueAds</span><span class="text-sm text-muted/60 ml-2">vehicle headrest advertising</span></div>
+              <div><span class="font-semibold text-black/80">ATM Banking Concept</span><span class="text-sm text-muted/60 ml-2">early rethink</span></div>
+            </div>
+          </div>
+        </div>
+        <a href="index.html" class="inline-block mt-10 text-sm font-medium text-black/70 hover:text-black link-underline">← back</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== PAGE 4: portfolio-ops.html ====== -->
+  <div style="display:none;">
+    <div id="portfolio-ops">
+      <div class="max-w-3xl mx-auto px-6 py-12">
+        <h1 class="text-4xl font-semibold tracking-tight">Portfolio-Ops</h1>
+        <div class="mt-2 text-sm text-muted/70">Python CLI · automation · DX</div>
+        <div class="mt-6 space-y-4 text-muted/90 max-w-2xl leading-relaxed">
+          <p><span class="font-medium text-black">Why:</span> I hated manually updating my portfolio. Every new project meant changing markdown, editing screenshots, committing, deploying. So I built a CLI that treats portfolios like software.</p>
+          <p>• Abstracted repetitive tasks (content updates, branching, commits, optional pushes) into single commands.</p>
+          <p>• Implemented Git workflow automation to reduce context switching.</p>
+          <p>• Designed opinionated yet extensible workflows.</p>
+          <p>• Tech: Python, Git, CLI tooling.</p>
+          <a href="https://github.com/NeshJesse/portfolio_ops" class="inline-block mt-4 text-sm font-medium text-black/70 hover:text-black link-underline">GitHub →</a>
+        </div>
+        <a href="projects.html" class="inline-block mt-8 text-sm font-medium text-black/70 hover:text-black link-underline">← back to projects</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== PAGE 5: devbrief.html ====== -->
+  <div style="display:none;">
+    <div id="devbrief">
+      <div class="max-w-3xl mx-auto px-6 py-12">
+        <h1 class="text-4xl font-semibold tracking-tight">DevBrief</h1>
+        <div class="mt-2 text-sm text-muted/70">Flutter · local-first · Drift</div>
+        <div class="mt-6 space-y-4 text-muted/90 max-w-2xl leading-relaxed">
+          <p><span class="font-medium text-black">Why:</span> I have over 70 unfinished projects. Some are dead, some promising, some forgotten. DevBrief continuously scans my computer, indexes projects, tracks Git activity, and tells me what's happening.</p>
+          <p>• Automated discovery and indexing of local projects.</p>
+          <p>• Signature-based detection for frameworks & languages.</p>
+          <p>• Local metadata store (Drift) to track lifecycle and activity.</p>
+          <p>• Auto-generates portfolio artifacts from real data.</p>
+          <p>• Tech: Flutter, SQLite via Drift.</p>
+          <a href="https://github.com/NeshJesse/brief_bird" class="inline-block mt-4 text-sm font-medium text-black/70 hover:text-black link-underline">GitHub →</a>
+        </div>
+        <a href="projects.html" class="inline-block mt-8 text-sm font-medium text-black/70 hover:text-black link-underline">← back to projects</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== PAGE 6: slipkitchen.html ====== -->
+  <div style="display:none;">
+    <div id="slipkitchen">
+      <div class="max-w-3xl mx-auto px-6 py-12">
+        <h1 class="text-4xl font-semibold tracking-tight">SlipKitchen</h1>
+        <div class="mt-2 text-sm text-muted/70">React · IndexedDB · Dexie</div>
+        <div class="mt-6 space-y-4 text-muted/90 max-w-2xl leading-relaxed">
+          <p><span class="font-medium text-black">Why:</span> I wanted to track why I was losing money betting. So I built a decision-support system to track prediction strategies, rationale, and outcomes across leagues.</p>
+          <p>• Architected data model for slips, prediction types, whitelist/blacklist teams.</p>
+          <p>• Performance analytics to identify winning patterns.</p>
+          <p>• Structured note-taking to improve future decisions.</p>
+          <p>• Export to social-media friendly formats.</p>
+          <p>• Tech: React, Dexie (IndexedDB).</p>
+        </div>
+        <a href="projects.html" class="inline-block mt-8 text-sm font-medium text-black/70 hover:text-black link-underline">← back to projects</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== PAGE 7: experience.html ====== -->
+  <div style="display:none;">
+    <div id="experience">
+      <div class="max-w-3xl mx-auto px-6 py-12">
+        <h1 class="text-4xl font-semibold tracking-tight">Experience</h1>
+        <div class="mt-8 space-y-8">
+          <div>
+            <h2 class="text-lg font-medium">Marsoney Labs · Frontend Developer Intern</h2>
+            <p class="text-sm text-muted/70">Oct 2025 – Feb 2026</p>
+            <ul class="mt-2 list-disc list-inside text-sm text-muted/80 space-y-1">
+              <li>Built an online learning management system using React, Next.js, Redux.</li>
+              <li>Translated Figma designs into functional, user-friendly interfaces.</li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-lg font-medium">PLP Africa · Software Engineering Scholarship</h2>
+            <p class="text-sm text-muted/70">Feb 2024 – May 2024</p>
+            <ul class="mt-2 list-disc list-inside text-sm text-muted/80 space-y-1">
+              <li>Covered Dart/Flutter, Python, Databases, Web, Entrepreneurship.</li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-lg font-medium">JKUAT · Business Information Technology (pursuing)</h2>
+            <p class="text-sm text-muted/70">Degree in progress</p>
+          </div>
+        </div>
+        <a href="index.html" class="inline-block mt-10 text-sm font-medium text-black/70 hover:text-black link-underline">← back</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== PAGE 8: writing.html ====== -->
+  <div style="display:none;">
+    <div id="writing">
+      <div class="max-w-3xl mx-auto px-6 py-12">
+        <h1 class="text-4xl font-semibold tracking-tight">Writing</h1>
+        <div class="mt-8 space-y-6 text-muted/80">
+          <p class="text-sm">Coming soon — engineering notes, product thinking, and build logs.</p>
+          <p class="text-sm">For now, check out my <a href="https://github.com/NeshJesse" class="text-black underline underline-offset-2">GitHub</a> or <a href="mailto:neshjesse@gmail.com" class="text-black underline underline-offset-2">email</a>.</p>
+        </div>
+        <a href="index.html" class="inline-block mt-8 text-sm font-medium text-black/70 hover:text-black link-underline">← back</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- tiny script to make nav links work (since we're in one file, but we want separate "pages") -->
+  <script>
+    // simple router: if URL hash matches one of our page ids, show it, else show main.
+    function showPage(id) {
+      // hide all page containers
+      document.querySelectorAll('.page-container').forEach(el => el.style.display = 'none');
+      // show the one that matches
+      const target = document.getElementById(id);
+      if (target) {
+        target.style.display = 'block';
+      } else {
+        // default: show main content (which is the body children)
+        // we'll handle by showing the body's main container
+        document.querySelector('.page-container')?.style.display = 'block';
+      }
+    }
+
+    // wrap the main content in a container with id="main"
+    // but we already have everything in the body; we'll just use the body itself.
+    // instead, we'll use a simpler approach: on load, check hash.
+    window.addEventListener('DOMContentLoaded', () => {
+      // hide all page divs (the ones with display:none we want to show)
+      const pages = document.querySelectorAll('[id$="-page"]'); // no, we used divs with ids.
+      // actually we used divs with ids like 'how-i-think' but they are inside display:none.
+      // we'll just set display:block for the one that matches hash.
+      const hash = window.location.hash.replace('#', '');
+      if (hash) {
+        const target = document.getElementById(hash);
+        if (target) {
+          // hide everything except the target
+          document.querySelectorAll('.page-container').forEach(el => el.style.display = 'none');
+          target.style.display = 'block';
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>

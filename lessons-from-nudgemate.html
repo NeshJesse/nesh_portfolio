@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lessons from NudgeMate</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #0a0a0a;
+    --white: #ffffff;
+    --grey-100: #f5f5f5;
+    --grey-200: #e8e8e8;
+    --grey-400: #a0a0a0;
+    --grey-700: #3d3d3d;
+  }
+  body { font-family: 'DM Sans', sans-serif; background: var(--white); color: var(--black); }
+  .font-display { font-family: 'Syne', sans-serif; }
+  .font-mono { font-family: 'DM Mono', monospace; }
+
+  .needle {
+    animation: pulse-rotate 3.5s ease-in-out infinite;
+    transform-origin: 50% 50%;
+  }
+  @keyframes pulse-rotate {
+    0%, 100% { transform: rotate(-6deg); }
+    50% { transform: rotate(6deg); }
+  }
+
+  .pulse-dot {
+    animation: travel 3.2s linear infinite;
+    offset-rotate: 0deg;
+  }
+  @keyframes travel {
+    0%   { left: 0%;   opacity: 0; }
+    6%   { opacity: 1; }
+    94%  { opacity: 1; }
+    100% { left: 100%; opacity: 0; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .needle, .pulse-dot { animation: none; }
+  }
+</style>
+</head>
+<body class="antialiased">
+
+  <!-- Header -->
+  <header class="border-b" style="border-color: var(--grey-200);">
+    <div class="max-w-3xl mx-auto px-6 py-5 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2.5 group">
+        <svg width="22" height="22" viewBox="0 0 40 40" fill="none">
+          <circle cx="20" cy="20" r="18" stroke="var(--black)" stroke-width="2"/>
+          <line class="needle" x1="20" y1="8" x2="20" y2="32" stroke="var(--black)" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="20" cy="20" r="2.5" fill="var(--black)"/>
+        </svg>
+        <span class="font-mono text-xs tracking-widest uppercase" style="color: var(--grey-700);">NudgeMate</span>
+      </a>
+      <span class="font-mono text-xs uppercase tracking-widest" style="color: var(--grey-400);">Field Notes</span>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="max-w-3xl mx-auto px-6 pt-16 pb-10">
+    <p class="font-mono text-xs uppercase tracking-[0.2em] mb-5" style="color: var(--grey-400);">Postmortem &middot; v1 &rarr; v2</p>
+    <h1 class="font-display font-800 leading-[1.05]" style="font-size: clamp(2.25rem, 5.5vw, 3.75rem); letter-spacing: -0.02em;">
+      Lessons from<br/>NudgeMate.
+    </h1>
+    <p class="mt-6 text-lg max-w-xl" style="color: var(--grey-700);">
+      I built a PWA that promised to nag you toward your goals. Turns out it could only nag you while you were already staring at it.
+    </p>
+    <div class="mt-6 flex items-center gap-4 font-mono text-xs" style="color: var(--grey-400);">
+      <span>Jul 2026</span>
+      <span>&middot;</span>
+      <span>4 min read</span>
+      <span>&middot;</span>
+      <span>architecture, PWA, push</span>
+    </div>
+  </section>
+
+  <!-- TL;DR -->
+  <section class="max-w-3xl mx-auto px-6">
+    <div class="border-2 p-6" style="border-color: var(--black);">
+      <p class="font-mono text-xs uppercase tracking-widest mb-3" style="color: var(--grey-400);">TL;DR</p>
+      <ul class="space-y-2 text-[15px]" style="color: var(--grey-700);">
+        <li>&middot; A closed browser tab has no memory. Every timer running in it dies with it.</li>
+        <li>&middot; "It works the instant I reopen the app" is not a fix &mdash; it's the bug, wearing a disguise.</li>
+        <li>&middot; Real background delivery needs someone awake when your app isn't: a server.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Act I -->
+  <section class="max-w-3xl mx-auto px-6 py-16">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="font-mono text-sm" style="color: var(--grey-400);">v1</span>
+      <h2 class="font-display font-700 text-2xl">The no-backend illusion</h2>
+    </div>
+    <div class="space-y-4 text-[15px] leading-relaxed" style="color: var(--grey-700);">
+      <p>
+        The original pitch for NudgeMate was clean: no accounts, no server, no database. Just a PWA, a service worker for offline caching, and <code class="font-mono text-sm px-1 py-0.5" style="background: var(--grey-100);">localStorage</code> holding your goals. Reminders fired from a plain JavaScript scheduler &mdash; find the most-neglected goal, set a <code class="font-mono text-sm px-1 py-0.5" style="background: var(--grey-100);">setTimeout</code> for the next check-in, fire a notification when it landed.
+      </p>
+      <p>
+        It worked perfectly. In the browser tab. While the browser tab was open.
+      </p>
+      <p>
+        Close the app, and that JavaScript context &mdash; and every timer inside it &mdash; simply stops existing. Nothing was scheduled anymore. Nothing was going to fire. But the app didn't feel broken, because of one deceptive detail: the scheduler re-ran on every launch, checked what was overdue, and fired immediately if something qualified.
+      </p>
+    </div>
+
+    <div class="mt-6 border font-mono text-xs p-4 space-y-1" style="border-color: var(--grey-200); background: var(--grey-100); color: var(--grey-700);">
+      <p><span style="color: var(--grey-400);">22:14</span> app closed &middot; timers cleared</p>
+      <p><span style="color: var(--grey-400);">08:00</span> reminder was due &middot; nothing happened, nobody home</p>
+      <p><span style="color: var(--grey-400);">13:40</span> app reopened &middot; scheduler runs on mount</p>
+      <p><span style="color: var(--grey-400);">13:40</span> "overdue reminder" found &middot; notification fires <span style="color: var(--black);">instantly</span></p>
+    </div>
+    <p class="mt-4 text-[15px] leading-relaxed" style="color: var(--grey-700);">
+      That last line is what fooled me for a while. A notification arriving the moment you open the app doesn't look like a missed reminder &mdash; it looks like a reminder that just worked. It took tracing the actual event source to see there was no <code class="font-mono text-sm px-1 py-0.5" style="background: var(--grey-100);">push</code> listener anywhere in the service worker at all. The app was never receiving anything in the background. It was just very good at pretending, on reopen, that it had.
+    </p>
+  </section>
+
+  <!-- Signal diagram -->
+  <section class="max-w-3xl mx-auto px-6 pb-16">
+    <p class="font-mono text-xs uppercase tracking-widest mb-6" style="color: var(--grey-400);">The v2 wake path</p>
+    <div class="border p-8" style="border-color: var(--grey-200);">
+      <div class="relative h-1 mb-10" style="background: var(--grey-200);">
+        <div class="pulse-dot absolute -top-[5px] w-3 h-3 rounded-full" style="background: var(--black);"></div>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 -mt-2">
+        <div>
+          <p class="font-mono text-xs mb-1" style="color: var(--grey-400);">01</p>
+          <p class="font-display font-700 text-sm mb-1">Cron job</p>
+          <p class="text-xs" style="color: var(--grey-700);">Vercel Cron checks who's overdue, on a schedule, with no app open anywhere.</p>
+        </div>
+        <div>
+          <p class="font-mono text-xs mb-1" style="color: var(--grey-400);">02</p>
+          <p class="font-display font-700 text-sm mb-1">Push service</p>
+          <p class="text-xs" style="color: var(--grey-700);">Server hands the message to FCM, keyed to a stored subscription &mdash; not to the app.</p>
+        </div>
+        <div>
+          <p class="font-mono text-xs mb-1" style="color: var(--grey-400);">03</p>
+          <p class="font-display font-700 text-sm mb-1">Service worker</p>
+          <p class="text-xs" style="color: var(--grey-700);">Wakes on the <code class="font-mono">push</code> event, even if the app was fully killed.</p>
+        </div>
+        <div>
+          <p class="font-mono text-xs mb-1" style="color: var(--grey-400);">04</p>
+          <p class="font-display font-700 text-sm mb-1">Notification</p>
+          <p class="text-xs" style="color: var(--grey-700);">Shown by the worker itself &mdash; no page, no tab, no timer required.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Act II -->
+  <section class="max-w-3xl mx-auto px-6 pb-16">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="font-mono text-sm" style="color: var(--grey-400);">v2</span>
+      <h2 class="font-display font-700 text-2xl">Just enough backend</h2>
+    </div>
+    <div class="space-y-4 text-[15px] leading-relaxed" style="color: var(--grey-700);">
+      <p>
+        "No backend" turned out to be a nice constraint for the UI and a wrong constraint for delivery. The fix wasn't a rewrite &mdash; the goal cards, the logging flow, the offline cache all stayed exactly as they were. What changed sat underneath: a small Postgres database for device subscriptions and goal state, a real <code class="font-mono text-sm px-1 py-0.5" style="background: var(--grey-100);">push</code> handler in the service worker, and a scheduled job that doesn't care whether anyone's phone is even unlocked.
+      </p>
+      <p>
+        The nudge message bank moved out of a static JSON file and into the database too &mdash; not because it needed to, but because the cron job needed to query it without bundling the whole file into a serverless function on every run. Small side effect of the same architecture shift, not a separate decision.
+      </p>
+    </div>
+  </section>
+
+  <!-- Lessons -->
+  <section class="max-w-3xl mx-auto px-6 pb-20">
+    <p class="font-mono text-xs uppercase tracking-widest mb-6" style="color: var(--grey-400);">What stuck with me</p>
+    <div class="space-y-5">
+      <div class="flex gap-4">
+        <span class="font-mono text-sm shrink-0 w-6" style="color: var(--grey-400);">1</span>
+        <p class="text-[15px]" style="color: var(--grey-700);"><span class="font-display font-700" style="color: var(--black);">"Works on desktop" isn't a spec.</span> Desktop Chrome forgives things mobile browsers never will.</p>
+      </div>
+      <div class="flex gap-4">
+        <span class="font-mono text-sm shrink-0 w-6" style="color: var(--grey-400);">2</span>
+        <p class="text-[15px]" style="color: var(--grey-700);"><span class="font-display font-700" style="color: var(--black);">A closed tab has no memory.</span> Literally &mdash; every variable, every timer, gone the instant it closes.</p>
+      </div>
+      <div class="flex gap-4">
+        <span class="font-mono text-sm shrink-0 w-6" style="color: var(--grey-400);">3</span>
+        <p class="text-[15px]" style="color: var(--grey-700);"><span class="font-display font-700" style="color: var(--black);">Ask what wakes the process up before you ask what it should do.</span> The event source matters more than the logic inside it.</p>
+      </div>
+      <div class="flex gap-4">
+        <span class="font-mono text-sm shrink-0 w-6" style="color: var(--grey-400);">4</span>
+        <p class="text-[15px]" style="color: var(--grey-700);"><span class="font-display font-700" style="color: var(--black);">"No backend" is a UI ideal, not a delivery mechanism.</span> Something has to be awake when the user isn't looking.</p>
+      </div>
+      <div class="flex gap-4">
+        <span class="font-mono text-sm shrink-0 w-6" style="color: var(--grey-400);">5</span>
+        <p class="text-[15px]" style="color: var(--grey-700);"><span class="font-display font-700" style="color: var(--black);">A minimal backend beats a fake-local one.</span> One table, one cron route, no accounts &mdash; still true to the original spirit.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t" style="border-color: var(--grey-200);">
+    <div class="max-w-3xl mx-auto px-6 py-8 flex items-center justify-between">
+      <a href="#" class="font-mono text-xs uppercase tracking-widest hover:opacity-60 transition-opacity" style="color: var(--grey-700);">&larr; Back to portfolio</a>
+      <span class="font-mono text-xs" style="color: var(--grey-400);">NudgeMate &middot; field notes</span>
+    </div>
+  </footer>
+
+</body>
+</html>

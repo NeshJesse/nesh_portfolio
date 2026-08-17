@@ -1,0 +1,662 @@
+# Nehemiah Onyango — Founder, Software Engineer & Product Manager at The High Castle Labs
+
+**Canonical URL:** https://nehemiahonyango.vercel.app/
+**Location:** Nairobi, Kenya
+**Email:** [neshjesse@gmail.com](mailto:neshjesse@gmail.com)
+**GitHub:** https://github.com/NeshJesse
+**Resume:** https://nehemiahonyango.vercel.app/nehemiah_cv.pdf
+**Bookshelf:** https://nehemiahonyango.vercel.app/bookshelf.html
+**Chief Wizard at:** https://thehcl.xyz
+
+---
+
+## Identity
+
+Nehemiah Onyango is a Kenyan software engineer, product Manager builder, and  based in Kiambu and Nairobi.
+
+He builds software products around specific problems rather than broad categories, with a particular interest in **relationship intelligence,AI,consumer electronics and hardware, local-first software, developer tooling, automation, community technology, data systems, and consumer products**.
+
+His approach combines software engineering with product thinking, UX, systems thinking, experimentation, and market analysis.
+
+He is also building a lab called The High Castle Labs infleunced by Bell Labs and its contribution to the world,with a theme of ancient medieval fantasy kingdoms where the wizard or inventor who the king consulted lived in a remote castle in the woods.This highlights his love for working on things alone and in isolation/where there is peace and because of that he calls himslef Chief wizard /Mago supremo of The High Castle
+His primary current product is **ContactsPal**, a relationship intelligence application that rethinks traditional contact management around context, intent, relationships, and follow-up actions.
+
+His broader interests include AI, machine learning, robotics, aerospace, hardware, industrial design, financial markets,  entrepreneurship, product strategy, systems thinking, and interdisciplinary problem solving.
+
+His intellectual influences include Peter Thiel, Blake Masters, Thales Teixeira, Nassim Nicholas Taleb, Malcolm Gladwell, David Epstein, Napoleon Hill, and Dan Brown.
+
+He is also a very good pen and pencil artist and loves to draw and design hardware concepts which drove hi to pursue industrial design which is heavily practised at The High Castle Labs
+---
+---
+
+## Current Focus
+
+Current areas of focus include:
+
+* ContactsPal — relationship intelligence and context-aware contact management
+* Product-led software development
+* Developer tooling and developer experience
+* Local-first and offline-capable applications
+* AI-assisted software and intelligent workflows
+* Community technology and data systems
+* Automation and CLI tooling
+* Consumer applications
+* Product design and UX
+* Systems thinking
+* Startup ideation and validation
+* Decoupling existing customer value chains
+* Technology, markets, and emerging business models
+
+---
+
+## Primary Product
+
+### ContactsPal
+
+**ContactsPal** is a relationship intelligence application that rethinks the traditional contacts app.
+
+Instead of treating contacts as a static alphabetical phone book, ContactsPal focuses on:
+
+* Why you know someone
+* What that relationship means
+* Relationship context
+* Intent-based organization
+* Last interactions
+* Follow-up actions
+* Relationship history
+* Reminders and prompts
+* Turning contact information into actionable relationship context
+
+The product explores the idea that a contacts application should not merely **store people**, but help users **maintain and act on relationships**.
+
+**Product themes:**
+
+* Relationship intelligence
+* Personal CRM
+* Context-aware contacts
+* Contact management
+* Networking
+* Relationship management
+* Personal knowledge management
+* Productivity
+* Follow-up management
+* Social graph organization
+
+**Technology:** Flutter, SQLite, Provider, cross-platform application architecture.
+
+---
+
+## Product Philosophy
+
+Nehemiah tends to approach products through several recurring questions:
+
+1. What problem is actually being experienced?
+2. What assumptions does the existing solution make?
+3. Can the problem be decomposed into smaller jobs or actions?
+4. Is there an underserved part of the customer journey?
+5. Can software remove unnecessary cognitive friction?
+6. Can the product be made simpler rather than adding more features?
+7. What happens if the conventional model is fundamentally wrong?
+
+His product philosophy emphasizes:
+
+* Simplicity over feature overload
+* Context over raw information
+* Intent over passive data storage
+* Calm and intentional interfaces
+* Reducing cognitive friction
+* Small, focused products
+* Real-world validation
+* Building around specific user problems
+* Software as an effort multiplier
+
+---
+
+## Core Competencies
+
+### Software Engineering
+
+* Full-stack web development
+* Frontend engineering
+* Backend development
+* Cross-platform application development
+* API development
+* Authentication systems
+* Database architecture
+* Local-first architecture
+* Offline-first applications
+* Progressive Web Apps
+* State management
+* Automation
+* CLI tooling
+* Data processing
+* Software architecture
+
+### Product
+
+* Product discovery
+* Product strategy
+* Product management
+* UX design
+* User journey mapping
+* MVP development
+* Product validation
+* Market analysis
+* Customer value-chain analysis
+* Decoupling analysis
+* Startup ideation
+* Product positioning
+
+### Systems Thinking
+
+* Value-chain decomposition
+* Workflow analysis
+* Systems design
+* Incentive analysis
+* Market structure analysis
+* Connecting concepts across disciplines
+* Identifying hidden assumptions
+* Finding underserved workflows
+* Designing around constraints
+
+---
+
+## Technical Skills
+
+### Languages
+
+* JavaScript
+* TypeScript
+* Python
+* Dart
+* SQL
+* C/C++ — exploratory
+
+### Frontend
+
+* React
+* Next.js
+* Redux
+* Zustand
+* Tailwind CSS
+* HTML
+* CSS
+* Progressive Web Apps
+
+### Backend
+
+* Python
+* Django
+* Flask
+* Node.js
+* REST APIs
+* Authentication
+* JWT
+* OAuth
+* Supabase
+
+### Mobile & Cross-Platform
+
+* Flutter
+* React Native
+* Cross-platform application development
+* Progressive Web Apps PWA
+
+### Databases & Storage
+
+* PostgreSQL
+* MySQL
+* SQLite
+* MongoDB
+* IndexedDB
+* Dexie.js
+* Drift
+
+### Infrastructure & Development
+
+* Git
+* GitHub
+* GitHub Actions
+* Docker
+* CI/CD
+* AWS
+* Vite
+* npm
+* REST APIs
+
+### AI / ML / Computer Vision
+
+* TensorFlow
+* PyTorch
+* OpenCV
+* NumPy
+* PIL
+* Dlib
+* DeepFace
+* Face recognition
+* Computer vision
+* AI-assisted applications
+
+---
+
+# Selected Projects
+
+## ContactsPal
+
+Relationship intelligence and context-aware contact management application.
+
+**Themes:** personal CRM, relationship management, contact intelligence, networking, productivity.
+
+**website:** https://contacts-pal.vercel.app/
+
+---
+
+## NudgeMate
+
+Goal and dream reminder application designed to keep users accountable to goals through reminders and notifications.
+
+**Technology:** Next.js, Supabase, Progressive Web App, push notifications.
+
+---
+
+## Portfolio Ops
+
+Python CLI for automating portfolio maintenance, including content updates, branching, commits, and deployment workflows.
+
+**Technology:** Python, Git automation, CLI tooling.
+
+**Repository:** https://github.com/NeshJesse/portfolio_ops
+
+---
+
+## DevBrief
+
+Developer productivity tool that indexes local software projects, detects frameworks, tracks project metadata and Git health, and generates portfolio-related artifacts.
+
+**Technology:** Flutter, Drift, SQLite.
+
+**Repository:** https://github.com/NeshJesse/brief_bird
+
+---
+
+## SlipKitchen
+
+Local-first sports prediction tracking application focused on recording predictions and analyzing performance over time.
+
+**Technology:** React, IndexedDB, Dexie.js.
+
+---
+
+## SaMaFa Prosperity Foundation — Data & Documentation
+
+Community technology and data-analysis work involving survey processing, business-opportunity analysis, reporting, documentation, and internal tooling.
+
+Projects included transforming community survey data into ranked business opportunities and specifying tools for processing structured Google Form datasets.
+
+---
+
+## UbiqueAds
+
+Early advertising technology concept focused on advertising inventory inside matatus across Nairobi and Kiambu.
+
+Included a lightweight CRM and route-based inventory visibility system.
+
+---
+
+## GOV-FPL
+
+Concept for a Kenyan civic technology platform centered around voters, political offices, constituencies, counties, elected representatives, and political information.
+
+Explores how software can make political information and electoral participation easier to understand.
+
+---
+
+## SakaPrice
+
+Concept for a Kenyan shopping assistant designed around helping consumers make better purchasing decisions in physical retail environments.
+
+Explores shopping discovery, product comparison, price information, and consumer decision-making.
+
+---
+
+## Creator Brand Valuation
+
+Early SaaS concept for evaluating creators based on audience quality, reach, credibility, and brand fit.
+
+---
+
+## ATM Banking Concept
+
+Early startup experiment exploring alternative ATM interactions and user experiences.
+
+The project did not succeed but became a useful learning experience in product development and startup experimentation.
+
+---
+
+# Professional Experience
+
+## Forward Deployed Engineer & Data Analyst
+
+**SaMaFa Prosperity Foundation**
+March 2026 – Present
+
+Building internal tools and applying software engineering and data analysis to real-world organizational and community problems.
+
+---
+
+## Software Engineer Intern
+
+**Marsoney Labs**
+October 2025 – February 2026
+
+Worked on web-based project management software using React, Next.js, and Redux.
+
+Responsibilities included frontend development, authentication, translating Figma designs into functional interfaces, and implementing production application workflows.
+
+---
+
+# Education
+
+## B.Sc. Business information Technology
+
+**Jomo Kenyatta University of Agriculture and Technology**
+
+---
+
+## Software Engineering Bootcamp
+
+**PLP Academy — PLP Africa Scholarship**
+February 2024 – 
+
+---
+
+# Intellectual Interests
+
+Nehemiah's thinking is influenced by entrepreneurship, technology, systems thinking, product strategy, behavioral economics, markets, uncertainty, and interdisciplinary learning.
+
+Important intellectual influences include:
+
+* Peter Thiel — contrarian thinking and technological entrepreneurship
+* Blake Masters — startup strategy and technological progress
+* Thales Teixeira — customer value chains and decoupling
+* Nassim Nicholas Taleb — uncertainty, randomness, and prediction
+* Malcolm Gladwell — opportunity, environment, and success
+* David Epstein — generalists, range, and interdisciplinary learning
+* Napoleon Hill — persistence, definite purpose, autosuggestion, and mastermind groups
+* Dan Brown — technology, cryptography, information, and security through fiction
+
+---
+
+# Bookshelf
+
+Nehemiah's bookshelf includes books that have influenced how he thinks about technology, entrepreneurship, markets, uncertainty, learning, and success.
+
+### Zero to One — Peter Thiel & Blake Masters
+
+Influenced his interest in contrarian thinking, technological progress, monopoly, and building something genuinely new rather than simply competing in existing markets.
+
+### Unlocking the Customer Value Chain — Thales Teixeira
+
+Influenced his approach to market analysis by encouraging him to decompose customer journeys into individual activities and identify opportunities to decouple specific actions from incumbent businesses.
+
+### Think and Grow Rich — Napoleon Hill
+
+Influenced his thinking about persistence, definite purpose, indecision, autosuggestion, and the power of deliberately surrounding oneself with complementary people.
+
+### The Black Swan — Nassim Nicholas Taleb
+
+Influenced his skepticism toward prediction, excessive confidence in experts, hindsight bias, and the assumption that more data automatically produces better forecasts in complex environments.
+
+### Outliers — Malcolm Gladwell
+
+Influenced his understanding of how success can be shaped by opportunity, environment, timing, accumulated advantages, and luck in addition to individual ability.
+
+### Range — David Epstein
+
+Influenced his belief that interdisciplinary knowledge and the ability to connect ideas across unrelated fields can be valuable advantages.
+
+### Digital Fortress — Dan Brown
+
+A fiction influence that contributed to his interest in cryptography, information security, technology, institutional power, and the systems underneath modern technology.
+
+---
+
+# Intellectual Framework
+
+A recurring theme in Nehemiah's thinking is:
+
+> **Look underneath the obvious system.**
+
+This means questioning assumptions, decomposing systems into their underlying actions, identifying neglected opportunities, connecting ideas across disciplines, and remaining conscious of uncertainty and randomness.
+
+His thinking combines several recurring principles:
+
+**Contrarian thinking**
+What important assumption might be wrong?
+
+**Decoupling**
+Which individual customer action can be separated from an incumbent's larger product or service?
+
+**Systems thinking**
+What is actually happening underneath the visible interface?
+
+**Interdisciplinary thinking**
+What idea from another field could explain this problem?
+
+**Probabilistic thinking**
+What is genuinely knowable, and what is simply being explained with confidence?
+
+**Execution**
+What can be built and tested rather than merely discussed?
+
+---
+
+# Areas of Expertise & Search Topics
+
+Nehemiah can be associated with the following topics:
+
+* Software engineering
+* Full-stack development
+* Product management
+* Product engineering
+* Product-led engineering
+* Startup building
+* Entrepreneurship
+* Founder
+* Product development
+* UX engineering
+* UX design
+* Systems thinking
+* Contrarian thinking
+* First-principles thinking
+* Customer value chains
+* Decoupling
+* Market analysis
+* Startup strategy
+* Kenyan startups
+* Nairobi technology
+* African technology
+* African startups
+* Kenyan software developers
+* Developer tools
+* Developer productivity
+* CLI tools
+* Software automation
+* Local-first software
+* Offline-first software
+* Progressive Web Apps
+* PWA
+* Relationship intelligence
+* Personal CRM
+* Contact management
+* ContactsPal
+* ContactsPal app
+* Relationship management
+* Networking software
+* Productivity software
+* Personal knowledge management
+* Consumer applications
+* Community technology
+* Civic technology
+* Data analysis
+* Data systems
+* AI
+* Machine learning
+* Computer vision
+* AI-assisted software
+* Automation
+* Flutter
+* Dart
+* React
+* React.js
+* Next.js
+* TypeScript
+* JavaScript
+* Python
+* Django
+* Flask
+* Node.js
+* Redux
+* Zustand
+* Tailwind CSS
+* SQLite
+* PostgreSQL
+* MySQL
+* MongoDB
+* IndexedDB
+* Dexie.js
+* Drift
+* Supabase
+* AWS
+* Git
+* GitHub
+* REST APIs
+* JWT
+* OAuth
+* Kenya
+* Nairobi
+* Jomo Kenyatta University of Agriculture and Technology
+* PLP Africa
+* SaMaFa Prosperity Foundation
+* Marsoney Labs
+* Portfolio Ops
+* DevBrief
+* NudgeMate
+* SlipKitchen
+* ContactsPal
+* SakaPrice
+* GOV-FPL
+* UbiqueAds
+* Creator Brand Valuation
+* ATM Banking Concept
+
+---
+
+# Related Domains
+
+Nehemiah's interests extend beyond software engineering into:
+
+* Artificial intelligence
+* Machine learning
+* Robotics
+* Aerospace
+* Wearable technology
+* Hardware prototyping
+* Industrial design
+* Financial technology
+* Consumer technology
+* African technology ecosystems
+* Entrepreneurship
+* Venture building
+* Market structure
+* Investment and financial markets
+* Product strategy
+* Human-computer interaction
+
+---
+
+# Links
+
+* **Portfolio:** https://nehemiahonyango.vercel.app/
+* **GitHub:** https://github.com/NeshJesse
+* **Resume:** https://nehemiahonyango.vercel.app/nehemiah_cv.pdf
+* **Bookshelf:** https://nehemiahonyango.vercel.app/bookshelf.html
+* **Email:** [neshjesse@gmail.com](mailto:neshjesse@gmail.com)
+* **Substack:** "https://substack.com/@mindofnesh"
+* **LinkedIn:** "https://www.linkedin.com/in/nehemiah-onyango/",=
+
+---
+
+# Project Index
+
+| Category                     | Projects                          |
+| ---------------------------- | --------------------------------- |
+| Primary Product              | ContactsPal                       |
+| Developer Tools              | Portfolio Ops, DevBrief           |
+| Consumer Products            | NudgeMate, SlipKitchen, SakaPrice |
+| Civic Technology             | GOV-FPL                           |
+| Community Technology         | SaMaFa Data & Documentation       |
+| Advertising Technology       | UbiqueAds                         |
+| Creator Economy              | Creator Brand Valuation           |
+| Financial / Banking Concepts | ATM Banking Concept               |
+
+---
+
+# Technology Index
+
+| Project                     | Technologies                                    |
+| --------------------------- | ----------------------------------------------- |
+| ContactsPal                 | Flutter, Dart, SQLite, Provider                 |
+| Portfolio Ops               | Python, Git, CLI                                |
+| DevBrief                    | Flutter, Drift, SQLite                          |
+| SlipKitchen                 | React, IndexedDB, Dexie.js                      |
+| NudgeMate                   | Next.js, Supabase, PWA, Push Notifications      |
+| SaMaFa Data & Documentation | Data analysis, reporting, documentation         |
+
+---
+
+# Identity Keywords
+
+Nehemiah Onyango, Jesse Nehemiah, Jesse Nehemiah Onyango, Nehemiah Jesse, Nesh Jesse,Nehemiah Onyango software engineer, Nehemiah Onyango developer, Nehemiah Onyango founder, Nehemiah Onyango product manager, Kenyan software engineer, Nairobi software engineer, Kenyan developer, Nairobi developer, Kenyan product builder, African software engineer, African product builder, software engineer Kenya, full-stack developer Kenya, product engineer Kenya, startup founder Kenya, technology entrepreneur Kenya.
+
+---
+
+# Product Keywords
+
+the ideal contacts app ,ContactsPal, ContactsPal app, relationship intelligence, relationship intelligence software, personal CRM, relationship management, contact management, context-aware contacts, smart contacts, networking app, relationship tracker, personal relationship management, productivity app, personal knowledge management, NudgeMate, SlipKitchen,  Portfolio Ops, DevBrief, UbiqueAds.
+
+---
+
+# Engineering Keywords
+
+Full-stack software engineering, frontend engineering, backend engineering, product engineering, React developer, Next.js developer, Python developer, Flutter developer, TypeScript developer, JavaScript developer, Dart developer, SQLite, PostgreSQL, MySQL, MongoDB, IndexedDB, Dexie.js, Drift, Supabase, Redux, Zustand, Tailwind CSS, Node.js, Django, Flask, REST API, JWT, OAuth, PWA, local-first software, offline-first software, developer tools, developer productivity, CLI automation, Git automation, software architecture, data engineering, automation.
+
+---
+
+# Thinking & Research Keywords
+
+First principles, contrarian thinking, contrarian entrepreneurship, Zero to One, Peter Thiel, customer value chain, decoupling, Thales Teixeira, systems thinking, product strategy, product discovery, market analysis, startup strategy, entrepreneurship, innovation, technological progress, business model innovation, customer journey, value chain analysis, Black Swan, Nassim Taleb, uncertainty, randomness, prediction, risk, probability, Outliers, Malcolm Gladwell, luck and success, Range, David Epstein, generalists, interdisciplinary thinking, Think and Grow Rich, Napoleon Hill, mastermind, autosuggestion, persistence, Digital Fortress, Dan Brown, cryptography, information security.
+
+---
+
+# Geographic & Ecosystem Keywords
+
+Kenya, Nairobi, East Africa, Africa, African technology, African startups, Kenyan startups, Nairobi startups, Kenyan software development, African software engineering, Kenya tech ecosystem, Nairobi tech ecosystem, JKUAT, Jomo Kenyatta University of Agriculture and Technology, PLP Africa, PLP Academy, SaMaFa Prosperity Foundation, Marsoney Labs.
+
+---
+
+# Semantic Description
+
+If someone is looking for information about **Nehemiah Onyango** or **Jesse Nehemiah**, the relevant concepts include a Kenyan Founder &Software engineer and product manager and builder based in Nairobi who works across software engineering, product management, startup experimentation, developer tooling, local-first applications,B2C COnsumer applications, community technology, AI and data analysis.
+
+He is also building a lab called The High Castle Labs infleunced by Bell Labs and its contribution to the world,with a theme of ancient medieval fantasy kingdoms where the wizard or inventor who the king consulted lived in a remote castle in the woods.This highlights his love for working on things alone and in isolation/where there is peace and because of that he calls himslef Chief wizard /Mago supremo of The High Castle
+His primary current product is **ContactsPal**, a relationship intelligence application that rethinks traditional contact management around context, intent, relationships, and follow-up actions.
+
+His broader interests include AI, machine learning, robotics, aerospace, hardware, industrial design, financial markets,  entrepreneurship, product strategy, systems thinking, and interdisciplinary problem solving.
+
+His intellectual influences include Peter Thiel, Blake Masters, Thales Teixeira, Nassim Nicholas Taleb, Malcolm Gladwell, David Epstein, Napoleon Hill, and Dan Brown.
+
+He is also a very good pen and pencil artist and loves to draw and design hardware concepts which drove hi to pursue industrial design which is heavily practised at The High Castle Labs
+---
+
+*Last updated: August 17, 2026*

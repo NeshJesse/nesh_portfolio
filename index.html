@@ -3,7 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nehemiah Onyango — Software Engineer, Product Builder</title>
+
+ <!-- Primary Meta Tags -->
+  <title>Nehemiah Onyango — Founder & Software Engineer, Product Manager & Mago Supremo at The High Castle Labs  | Kenya</title>
+  <meta name="title" content="Nehemiah Onyango — Founder  & Software Engineer, Product Manager & Mago Supremo at The High Castle Labs  | Kenya" />
+  <meta name="description" content="I am many things as of now I'm a Full-Stack Software engineer and Product Manager Based in Nairobi, Kenya." />
+  <meta name="keywords" content="software engineer, founder of ContactsPal, product manager, mago supremo at the high castle labs,High Castle Labs" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://nehemiahonyango.vercel.app/" />
+
+
+    <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nehemiahonyango.vercel.app/" />
+  <meta property="og:title" content="Nehemiah Onyango — Founder & Software Engineer, Product Manager & Mago Supremo at The High Castle Labs  | Kenya" />
+  <meta property="og:description" content="I am many things as of now I'm a Full-Stack Software engineer and Product Manager Based in Nairobi, Kenya." />
+  <meta property="og:image" content="https://nehemiahonyango.vercel.app/og-image.jpg" />
+    <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://nehemiahonyango.vercel.app/" />
+  <meta name="twitter:title" content="Nehemiah Onyango —Founder & Software Engineer, Product Manager & Mago Supremo at The High Castle Labs  | Kenya" />
+  <meta name="twitter:description" content="I am many things, as of now I'm a Full-Stack Software engineer and Product Manager Based in Nairobi, Kenya." />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Nehemiah Onyango",
+      "jobTitle": "Software Engineer",
+      "url": "https://nehemiahonyango.vercel.app/",
+      "email": "neshjesse@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nairobi",
+        "addressCountry": "Kenya"
+      },
+      "sameAs": [
+        "https://github.com/NeshJesse",
+        "https://www.linkedin.com/in/nehemiah-onyango/",
+        "https://www.instagram.com/neshthebuilder/",
+        "https://substack.com/@mindofnesh"
+      ]
+    }
+  </script>
+
+
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -49,9 +94,23 @@
     background-size: 0% 1px;
     background-repeat: no-repeat;
     background-position: 0 100%;
-    transition: background-size 0.3s ease;
+    transition: background-size 0.3s ease, color 0.3s ease;
   }
-  .underline-accent:hover{ background-size: 100% 1px; }
+  .underline-accent:hover{ background-size: 100% 1px; color: var(--accent); }
+
+  .line-link{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--ink);
+    text-decoration: none;
+    background-image: linear-gradient(var(--accent), var(--accent));
+    background-size: 0% 1px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: background-size 0.3s ease, color 0.3s ease;
+  }
+  .line-link:hover{ background-size: 100% 1px; color: var(--accent); }
 
   ::selection{ background: var(--accent); color: var(--bg); }
 
@@ -73,12 +132,13 @@
   <div class="max-w-5xl mx-auto px-6 md:px-10 h-14 flex items-center justify-between">
     <a href="#top" class="font-mono text-xs tracking-widest" style="color: var(--ink);">N.ONYANGO</a>
     <nav class="hidden md:flex text-black gap-6 font-mono text-xs" style="color: var(--muted);">
-      <a href="#work" class="underline-accent text-black hover:text-[var(--ink)]">work</a>
-      <a href="#languages" class="underline-accent text-black hover:text-[var(--ink)]">languages</a>
-      <a href="#how-i-think" class="underline-accent text-black hover:text-[var(--ink)]">How I think</a>
-      <a href="#experience" class="underline-accent text-black hover:text-[var(--ink)]">experience</a>
-      <a href="https://nesh-portfolio-rose.vercel.app/nehemiah_cv.pdf" class="underline-accent text-black hover:text-[var(--ink)]">Resume</a>
-      <a href="mailto:neshjesse@gmail.com" class="underline-accent text-black hover:text-[var(--ink)]">contact</a>
+      <a href="#work" class="underline-accent text-black hover:text-[var(--ink)]" aria-label="Some of Nehemiah Onyango's work">work</a>
+      <a href="#languages" class="underline-accent text-black hover:text-[var(--ink)]" aria-label="Some of Nehemiah Onyango's programming languages">languages</a>
+      <a href="#how-i-think" class="underline-accent text-black hover:text-[var(--ink)]" aria-label="Nehemiah Onyango's thoughts on how he thinks">How I think</a>
+      <a href="#experience" class="underline-accent text-black hover:text-[var(--ink)]" aria-label="Nehemiah Onyango's professional experience">experience</a>
+      <a href="./bookshelf.html" class="underline-accent text-black hover:text-[var(--ink)]" aria-label="Nehemiah Onyango's Book Shelf">Book Shelf</a>
+      <a href="https://nehemiahonyango.vercel.app/nehemiah_cv.pdf" class="underline-accent text-black hover:text-[var(--ink)]" aria-label="Nehemiah Onyango's Resume">Resume</a>
+      <a href="mailto:neshjesse@gmail.com" class="underline-accent text-black hover:text-[var(--ink)]" aria-label="Contact Nehemiah Onyango">contact</a>
     </nav>
   </div>
 </header>
@@ -92,12 +152,12 @@
     <span style="color: var(--muted);">Product Builder.</span>
   </h1>
   <p class="mt-8 text-lg md:text-xl max-w-xl leading-relaxed" style="color: var(--ink);">
-   I build software that solves annoyingly specific problems for specific groups of people
+   I use Software to solve annoyingly specific problems for specific groups of people
   </p>
 
   <div class="mt-14 font-mono text-xs" style="color: var(--muted);">
     <p class="mb-2 tracking-widest">CURRENTLY EXPLORING</p>
-    <p class="text-sm" style="color: var(--ink);">developer tooling · community technology · local-first software · automation</p>
+    <p class="text-sm" style="color: var(--ink);">B2C apps· CAD with Blender · local-first software</p>
   </div>
 </section>
 
@@ -105,31 +165,31 @@
 <section id="work" class="max-w-5xl mx-auto px-6 md:px-10 fade-in">
   <p class="font-mono text-xs tracking-widest mb-4" style="color: var(--muted);">SELECTED WORK</p>
   <div>
-    <a href="#developer-tools" class="work-row flex items-center justify-between py-5 px-1">
+    <a href="#developer-tools" class="work-row flex items-center justify-between py-5 px-1" aria-label="Developer tools built by Nehemiah Onyango">
       <span class="work-label font-display text-xl md:text-2xl">Developer Tools</span>
       <span class="work-arrow font-mono text-lg">→</span>
     </a>
-    <a href="#products" class="work-row flex items-center justify-between py-5 px-1">
+    <a href="#products" class="work-row flex items-center justify-between py-5 px-1" aria-label="B2C apps built by Nehemiah Onyango">
       <span class="work-label font-display text-xl md:text-2xl">Products</span>
       <span class="work-arrow font-mono text-lg">→</span>
     </a>
-    <a href="#community" class="work-row flex items-center justify-between py-5 px-1">
+    <a href="#community" class="work-row flex items-center justify-between py-5 px-1" aria-label="Community technology built by Nehemiah Onyango">
       <span class="work-label font-display text-xl md:text-2xl">Community Technology</span>
       <span class="work-arrow font-mono text-lg">→</span>
     </a>
-    <a href="#experiments" class="work-row flex items-center justify-between py-5 px-1">
+    <a href="#experiments" class="work-row flex items-center justify-between py-5 px-1" aria-label="Experiments conducted by Nehemiah Onyango">
       <span class="work-label font-display text-xl md:text-2xl">Experiments</span>
       <span class="work-arrow font-mono text-lg">→</span>
     </a>
-    <a href="#languages" class="work-row flex items-center justify-between py-5 px-1">
+    <a href="#languages" class="work-row flex items-center justify-between py-5 px-1" aria-label="Programming languages used by Nehemiah Onyango">
       <span class="work-label font-display text-xl md:text-2xl">Languages</span>
       <span class="work-arrow font-mono text-lg">→</span>
     </a>
-    <a href="#how-i-think" class="work-row flex items-center justify-between py-5 px-1">
+    <a href="#how-i-think" class="work-row flex items-center justify-between py-5 px-1" aria-label="Nehemiah Onyango's thoughts on how he thinks">
       <span class="work-label font-display text-xl md:text-2xl">How I Think</span>
       <span class="work-arrow font-mono text-lg">→</span>
     </a>
-    <a href="#experience" class="work-row flex items-center justify-between py-5 px-1">
+    <a href="#experience" class="work-row flex items-center justify-between py-5 px-1" aria-label="Nehemiah Onyango's professional experience">
       <span class="work-label font-display text-xl md:text-2xl">Experience</span>
       <span class="work-arrow font-mono text-lg">→</span>
     </a>
@@ -149,7 +209,7 @@
   <div class="case p-8 md:p-10">
     <div class="flex items-baseline justify-between flex-wrap gap-2 mb-6">
       <h3 class="font-display text-2xl">Portfolio Ops</h3>
-      <a href="https://github.com/NeshJesse/portfolio_ops" target="_blank" class="font-mono text-xs underline-accent" style="color: var(--muted);">github ↗</a>
+      <a href="https://github.com/NeshJesse/portfolio_ops" target="_blank" aria-label="Nehemiah Onyango's Github for Portfolio Ops" class="font-mono text-xs underline-accent" style="color: var(--muted);">github ↗</a>
     </div>
     <div class="grid md:grid-cols-2 gap-8">
       <div>
@@ -176,7 +236,7 @@
   <div class="case p-8 md:p-10">
     <div class="flex items-baseline justify-between flex-wrap gap-2 mb-6">
       <h3 class="font-display text-2xl">DevBrief</h3>
-      <a href="https://github.com/NeshJesse/brief_bird" target="_blank" class="font-mono text-xs underline-accent" style="color: var(--muted);">github ↗</a>
+      <a href="https://github.com/NeshJesse/brief_bird" target="_blank" aria-label="Nehemiah Onyango's Github for DevBrief" class="font-mono text-xs underline-accent" style="color: var(--muted);">github ↗</a>
     </div>
     <div class="grid md:grid-cols-2 gap-8">
       <div>
@@ -398,6 +458,7 @@
         <p class="text-sm leading-relaxed" style="color: var(--muted);">Currently working as a forward deployed enginner to 
          built internal tools to solve real-world problems through data analysis and software engineering on the field and on the go.
         </p>
+        <a href="https://samafa.org" aria-label="SaMaFa Prosperity Foundation" class="color: var(--muted)">SaMaFaProsperity Foundation</a>
       </div>
       <div style="border-top: 1px solid var(--border);" class="pt-4 mb-6">
         <div class="flex justify-between items-baseline">
@@ -427,47 +488,50 @@
     </div>
   </div>
 </section>
-<section class="mx-auto max-w-8xl px-5 py-24 sm:px-8 lg:px-12 lg:py-36">
-
-  <div class="max-w-4xl">
-
-    <p class="font-mono text-xs uppercase tracking-[0.18em] text-muted">
+<section id="contact" class="max-w-5xl mx-auto px-6 md:px-10 pt-24 pb-12 fade-in">
+  <div class="border-t border-[var(--border)] pt-16">
+    <p class="font-mono text-xs uppercase tracking-[0.18em]" style="color: var(--accent);">
       What's next?
     </p>
 
-    <h2 class="mt-7 font-mono text-4xl font-medium leading-[1.1] tracking-[-0.05em] sm:text-5xl lg:text-6xl">
+    <h2 class="mt-7 max-w-3xl font-display text-4xl font-medium leading-[0.98] tracking-[-0.04em] sm:text-5xl lg:text-6xl">
       I'm interested in difficult problems,
       ambitious teams, and things that
       probably shouldn't exist yet.
     </h2>
 
     <div class="mt-10">
-
-      <a
-        href="#contact"
-        class="line-link font-mono text-sm"
-      >
+      <a href="mailto:neshjesse@gmail.com" class="line-link font-mono text-sm">
         → Let's talk
       </a>
-
     </div>
-
   </div>
-
 </section>
+
 <!-- ============ FOOTER ============ -->
 <footer style="border-top: 1px solid var(--border);">
   <div class="max-w-5xl mx-auto px-6 md:px-10 py-16">
-    <p class="font-mono text-xs tracking-widest mb-6" style="color: var(--muted);">CONTACT</p>
-    <div class="flex flex-wrap gap-x-8 gap-y-3 font-mono text-sm mb-12">
-      <a href="mailto:neshjesse@gmail.com" class="underline-accent" style="color: var(--ink);">neshjesse@gmail.com</a>
-      <a href="https://github.com/NeshJesse" target="_blank" class="underline-accent" style="color: var(--ink);">github.com/NeshJesse</a>
-      <a href="tel:+254702337041" class="underline-accent" style="color: var(--ink);">+254 702 337 041</a>
+    <div class="mb-10">
+      <p class="font-mono text-xs uppercase tracking-[0.18em] mb-3" style="color: var(--muted);">What I'm building at</p>
+      <a href="https://thehcl.xyz" target="_blank" rel="noreferrer" aria-label="The High Castle Labs Website where Nehemiah Onyango is the Chief Wizard/Mago Supremo" class="inline-block font-display text-2xl md:text-3xl leading-none underline-accent" style="color: var(--ink);">
+        The High Castle Labs
+      </a>
     </div>
-    <p class="font-mono text-xs" style="color: var(--muted);">© 2026 · Nehemiah Onyango · Juja, Kiambu</p>
+
+    <div class="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
+      <div>
+        <p class="font-mono text-xs uppercase tracking-[0.18em] mb-4" style="color: var(--muted);">Contact</p>
+        <div class="flex flex-wrap gap-x-8 gap-y-3 font-mono text-sm">
+          <a href="mailto:neshjesse@gmail.com" class="underline-accent" style="color: var(--ink);">neshjesse@gmail.com</a>
+          <a href="https://github.com/NeshJesse" target="_blank" aria-label="Nehemiah Onyango's Github" rel="noreferrer" class="underline-accent" style="color: var(--ink);">github.com/NeshJesse</a>
+          <a href="tel:+254702337041" class="underline-accent" aria-label="Nehemiah Onyango's phone number" style="color: var(--ink);">+254 746809447</a>
+        </div>
+      </div>
+
+      <p class="font-mono text-xs" style="color: var(--muted);">© 2026 · Nehemiah Onyango · Juja, Kiambu</p>
+    </div>
   </div>
 </footer>
-
 <script>
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {

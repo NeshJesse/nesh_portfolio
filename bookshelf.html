@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nehemiah Onyango — Founder & Software Engineer, Product Manager & Mago Supremo at The High Castle Labs  | Kenya</title>
+
 
 <!-- Primary Meta Tags -->
   <title>Nehemiah Onyango — Founder & Software Engineer, Product Manager & Mago Supremo at The High Castle Labs  | Kenya</title>
@@ -89,6 +89,21 @@
   }
   .case + .case{ margin-top: -1px; }
 
+  .book-entry{
+    border: 1px solid var(--border);
+    background: rgba(255,255,255,0.15);
+  }
+  .book-entry + .book-entry{ margin-top: -1px; }
+
+  .book-quote{
+    color: var(--muted);
+  }
+
+  .chapter-label{
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
   .underline-accent{
     background-image: linear-gradient(var(--accent), var(--accent));
     background-size: 0% 1px;
@@ -116,22 +131,137 @@
 <!-- ============ NAV ============ -->
 <header class="fixed top-0 left-0 right-0 z-40 backdrop-blur-sm" style="background: rgba(250,249,245,0.85); border-bottom: 1px solid var(--border);">
   <div class="max-w-5xl mx-auto px-6 md:px-10 h-14 flex items-center justify-between">
-    <a href="#top" class="font-mono text-xs tracking-widest" style="color: var(--ink);">N.ONYANGO</a>
+    <a href="./index.html#top" class="font-mono text-xs tracking-widest" style="color: var(--ink);">N.ONYANGO</a>
     <nav class="hidden md:flex text-black gap-6 font-mono text-xs" style="color: var(--muted);">
-      <a href="#work" class="underline-accent text-black hover:text-[var(--ink)]" aria-label="Some of Nehemiah Onyango's work">work</a>
-      <a href="#languages" class="underline-accent text-black hover:text-[var(--ink)]" aria-label="Some of Nehemiah Onyango's programming languages">languages</a>
-      <a href="#how-i-think" class="underline-accent text-black hover:text-[var(--ink)]" aria-label="Nehemiah Onyango's thoughts on how he thinks">How I think</a>
-      <a href="#experience" class="underline-accent text-black hover:text-[var(--ink)]" aria-label="Nehemiah Onyango's professional experience">experience</a>
+      <a href="./index.html#work" class="underline-accent text-black hover:text-[var(--ink)]" aria-label="Some of Nehemiah Onyango's work">work</a>
+      <a href="./index.html#languages" class="underline-accent text-black hover:text-[var(--ink)]" aria-label="Some of Nehemiah Onyango's programming languages">languages</a>
+      <a href="./index.html#how-i-think" class="underline-accent text-black hover:text-[var(--ink)]" aria-label="Nehemiah Onyango's thoughts on how he thinks">How I think</a>
+      <a href="./index.html#experience" class="underline-accent text-black hover:text-[var(--ink)]" aria-label="Nehemiah Onyango's professional experience">experience</a>
       <a href="./bookshelf.html" class="underline-accent text-black hover:text-[var(--ink)]" aria-label="Nehemiah Onyango's Book Shelf">Book Shelf</a>
-      <a href="https://nehemiahonyango.vercel.app/nehemiah_cv.pdf" class="underline-accent text-black hover:text-[var(--ink)]" aria-label="Nehemiah Onyango's Resume">Resume</a>
+      <a href="https://nehemiahonyango.vercel.app/nehemiah_cv.pdf" class="underline-accent text-black hover:text-[var(--ink)]" aria-label="Nehemiah Onyango's Resume" download>Resume</a>
       <a href="mailto:neshjesse@gmail.com" class="underline-accent text-black hover:text-[var(--ink)]" aria-label="Contact Nehemiah Onyango">contact</a>
     </nav>
   </div>
 </header>
 
-<body>
+<section class="max-w-5xl mx-auto px-6 md:px-10 pt-28 pb-20 ">
+  <div class="mb-12 pt-6">
+    <p class="font-mono text-xs tracking-[0.18em] uppercase" style="color: var(--accent);">Bookshelf</p>
+    <h1 class="mt-5 font-display text-4xl md:text-6xl leading-[0.96] tracking-[-0.05em]">
+      The books that shaped how I think.
+    </h1>
+    <p class="mt-6 max-w-2xl text-base md:text-lg leading-relaxed" style="color: var(--muted);">
+      I don't read books to collect information. I read the ones that change the questions I ask.
+      These are the ideas that kept showing up in how I think about building, markets, products, uncertainty, and life.
+    </p>
+  </div>
 
+  <div class="space-y-6">
+    <article class="book-entry p-8 md:p-10">
+      <p class="chapter-label font-mono text-xs" style="color: var(--accent);">01 · Zero to One</p>
+      <h2 class="mt-4 font-display text-3xl md:text-4xl">Zero to One — Peter Thiel & Blake Masters</h2>
+      <p class="mt-4 font-mono text-xs uppercase tracking-[0.18em]" style="color: var(--muted);">The book that made me think differently about building.</p>
+      <p class="mt-6 leading-relaxed">
+        This book changed how I think about value creation. The central idea is simple but powerful: building something genuinely new is different from incrementally improving something that already exists. It pushed me toward looking for unoccupied spaces rather than crowded markets.
+      </p>
+      <p class="mt-4 leading-relaxed book-quote">
+        “What important truth do very few people agree with you on?” became one of the strongest questions I carry into product thinking.
+      </p>
+      <p class="mt-4 leading-relaxed">
+        I now approach products by asking what assumptions are baked into the current system—and whether those assumptions are wrong. That instinct shows up in how I think about contact tooling, marketplaces, and information products.
+      </p>
+    </article>
 
+    <article class="book-entry p-8 md:p-10">
+      <p class="chapter-label font-mono text-xs" style="color: var(--accent);">02 · Unlocking the Customer Value Chain</p>
+      <h2 class="mt-4 font-display text-3xl md:text-4xl">Unlocking the Customer Value Chain — Thales Teixeira</h2>
+      <p class="mt-4 font-mono text-xs uppercase tracking-[0.18em]" style="color: var(--muted);">The book that taught me to look at businesses as chains of actions.</p>
+      <p class="mt-6 leading-relaxed">
+        Teixeira's framework helped me change the way I analyze markets. Instead of asking how to beat a company, I started asking which part of the customer's journey is under-served and can be owned better.
+      </p>
+      <p class="mt-4 leading-relaxed">
+        Discover, compare, research, purchase, use, maintain, and sell are not just stages—they are opportunities. A company doesn't need to dominate an entire category to create real value. Sometimes the best opportunity is a single activity in the chain that incumbents ignore.
+      </p>
+      <p class="mt-4 leading-relaxed book-quote">
+        This is one reason I think more clearly about product strategy: not just “what is the market,” but “which part of the experience can be made radically better?”
+      </p>
+    </article>
+
+    <article class="book-entry p-8 md:p-10">
+      <p class="chapter-label font-mono text-xs" style="color: var(--accent);">03 · Think and Grow Rich</p>
+      <h2 class="mt-4 font-display text-3xl md:text-4xl">Think and Grow Rich — Napoleon Hill</h2>
+      <p class="mt-4 font-mono text-xs uppercase tracking-[0.18em]" style="color: var(--muted);">The book that made me take psychology, persistence, and self-direction seriously.</p>
+      <p class="mt-6 leading-relaxed">
+        I don't take every claim literally, but the book changed how I think about ambition and execution. It pushed me to see success as the result not only of technical ability, but also of mental discipline, decisive action, and the environment around you.
+      </p>
+      <p class="mt-4 leading-relaxed">
+        The idea of a mastermind, the importance of definite purpose, and the relationship between self-direction and execution all stuck with me. I increasingly think of building as a practice of connecting disciplines and surrounding yourself with the right kind of people rather than trying to know everything alone.
+      </p>
+    </article>
+
+    <article class="book-entry p-8 md:p-10">
+      <p class="chapter-label font-mono text-xs" style="color: var(--accent);">04 · The Black Swan</p>
+      <h2 class="mt-4 font-display text-3xl md:text-4xl">The Black Swan — Nassim Nicholas Taleb</h2>
+      <p class="mt-4 font-mono text-xs uppercase tracking-[0.18em]" style="color: var(--muted);">The book that made me suspicious of confident predictions.</p>
+      <p class="mt-6 leading-relaxed">
+        Complex systems are rarely predictable in the way people want them to be. More information can still leave you unprepared for events outside your model. That lesson changed how I think about markets, product bets, and entrepreneurship.
+      </p>
+      <p class="mt-4 leading-relaxed">
+        I became much more interested in the gap between what can be predicted and what can be prepared for. This has made me more careful with certainty, and more focused on learning systems that can adapt when reality diverges from expectation.
+      </p>
+    </article>
+
+    <article class="book-entry p-8 md:p-10">
+      <p class="chapter-label font-mono text-xs" style="color: var(--accent);">05 · Outliers</p>
+      <h2 class="mt-4 font-display text-3xl md:text-4xl">Outliers — Malcolm Gladwell</h2>
+      <p class="mt-4 font-mono text-xs uppercase tracking-[0.18em]" style="color: var(--muted);">The book that complicated my definition of success.</p>
+      <p class="mt-6 leading-relaxed">
+        Outliers reframed success as something shaped by opportunity, timing, environment, accumulated practice, culture, and luck—not just talent or effort. It taught me to look beyond the person and ask what conditions made the outcome possible.
+      </p>
+      <p class="mt-4 leading-relaxed">
+        That has had a practical effect on how I interpret founders, engineers, and high performers. I care more about context, support systems, and the opportunity landscape than I did before.
+      </p>
+    </article>
+
+    <article class="book-entry p-8 md:p-10">
+      <p class="chapter-label font-mono text-xs" style="color: var(--accent);">06 · Range</p>
+      <h2 class="mt-4 font-display text-3xl md:text-4xl">Range — David Epstein</h2>
+      <p class="mt-4 font-mono text-xs uppercase tracking-[0.18em]" style="color: var(--muted);">The book that gave me a framework for being a generalist.</p>
+      <p class="mt-6 leading-relaxed">
+        I have never been interested in staying inside a single discipline. Software, product design, finance, AI, hardware, business, and policy all influence each other in my thinking. Range gave me a way to understand that not as a lack of focus, but as a strength.
+      </p>
+      <p class="mt-4 leading-relaxed">
+        The value of interdisciplinary work is that ideas travel. A mental model from one domain can become useful in another if you know how to connect them. That has become one of the ways I define my own learning process.
+      </p>
+    </article>
+
+    <article class="book-entry p-8 md:p-10">
+      <p class="chapter-label font-mono text-xs" style="color: var(--accent);">07 · Digital Fortress</p>
+      <h2 class="mt-4 font-display text-3xl md:text-4xl">Digital Fortress — Dan Brown</h2>
+      <p class="mt-4 font-mono text-xs uppercase tracking-[0.18em]" style="color: var(--muted);">The fiction book that made technology feel like a battlefield of ideas.</p>
+      <p class="mt-6 leading-relaxed">
+        This book fed a deeper fascination with the hidden layers of technology: cryptography, information systems, institutional power, and the invisible structures behind user interfaces. It reinforced a belief that the most important parts of technology are often what users never see.
+      </p>
+      <p class="mt-4 leading-relaxed">
+        Once information becomes powerful, questions of trust, privacy, and control become unavoidable. That lens has shaped how I think about systems and the responsibility that comes with building them.
+      </p>
+    </article>
+
+    <article class="book-entry p-8 md:p-10">
+      <p class="chapter-label font-mono text-xs" style="color: var(--accent);">What these books have done to my thinking</p>
+      <h2 class="mt-4 font-display text-3xl md:text-4xl">The common thread</h2>
+      <p class="mt-6 leading-relaxed">
+        Taken together, these books point to a few recurring principles: I look for assumptions before solutions, I break complex systems into smaller parts, I distrust certainty in uncertain environments, I care about the conditions behind success, and I value the ability to connect different disciplines.
+      </p>
+      <p class="mt-4 leading-relaxed">
+        If I had to reduce all of it to one sentence, it would be this: when I see a normal system, I increasingly ask whether it actually has to work that way.
+      </p>
+      <p class="mt-4 leading-relaxed book-quote">
+        That question has shaped my thinking more than any one framework.
+      </p>
+    </article>
+  </div>
+</section>
 <!-- ============ FOOTER ============ -->
 <footer style="border-top: 1px solid var(--border);">
   <div class="max-w-5xl mx-auto px-6 md:px-10 py-16">

@@ -1,0 +1,271 @@
+# The Books That Shaped How I Think
+
+I don't read books simply to collect information. The books I remember are usually the ones that changed the questions I ask.
+
+Over time, these books have shaped how I think about building companies, designing products, understanding markets, taking risks, learning across disciplines, and interpreting success. Some taught me frameworks. Others gave me useful skepticism. A few changed the way I look at the world entirely.
+
+These are some of the books that have had the greatest influence on how I think.
+
+---
+
+## Zero to One — Peter Thiel & Blake Masters
+
+**The book that made me think differently about building.**
+
+*Zero to One* changed my understanding of what it means to build something valuable. Its central idea—that creating something genuinely new is fundamentally different from improving something that already exists—pushed me toward looking for **unoccupied spaces rather than crowded markets**.
+
+Thiel's question, *"What important truth do very few people agree with you on?"*, became particularly influential for me. It encourages a different kind of thinking: instead of asking what everyone believes is a good idea, ask what might be true that most people have overlooked.
+
+That way of thinking shows up repeatedly in how I approach products. I tend to look at ordinary systems and ask whether there is a fundamentally different way to organize them.
+
+ContactsPal is a good example. The conventional mental model of a contacts application is essentially **a phone book**. I became more interested in the idea that contacts could instead represent **relationships, context, intentions, and future actions**.
+
+The same instinct appears in ideas I've explored around shopping, financial markets, political information, and hardware. I increasingly find myself asking:
+
+> *What is everyone assuming this thing has to be? And what happens if that assumption is wrong?*
+
+*Zero to One* also reinforced my belief that the most interesting opportunities are often hidden in places where the existing solution feels so normal that nobody questions it.
+
+---
+
+## Unlocking the Customer Value Chain — Thales Teixeira
+
+**The book that taught me to look at businesses as chains of actions rather than companies.**
+
+Thales Teixeira's work on decoupling changed how I analyze markets.
+
+Instead of looking at an incumbent and asking, *"How do I compete with this company?"*, I learned to break the customer's experience into individual activities:
+
+**discover → compare → research → purchase → use → maintain → sell**
+
+The interesting question becomes:
+
+> **Which individual activity can a new company own better than the incumbent?**
+
+That framework has influenced the way I think about startups considerably. It is one reason I became interested in analyzing the Nairobi financial market without simply thinking about building another brokerage. The more interesting question was what happens at each stage of the investor journey—and whether a startup could own a neglected part of that journey.
+
+I've applied the same thinking to other products too. SakaPrice, for example, came from looking beyond the conventional idea of an e-commerce platform and focusing on the **shopping decision itself**.
+
+It taught me to stop seeing markets as monolithic.
+
+A company may dominate an entire category while still leaving several valuable pieces of the customer's journey poorly served.
+
+That is often where I look for opportunities now.
+
+---
+
+## Think and Grow Rich — Napoleon Hill
+
+**The book that made me take psychology, persistence, and self-direction more seriously.**
+
+I don't take every claim in *Think and Grow Rich* literally, but the book had a significant influence on how I think about ambition and execution.
+
+The ideas around **autosuggestion, definite purpose, persistence, indecision, and the "mastermind"** made me think about success as something influenced not only by technical ability, but also by the mental systems surrounding that ability.
+
+The concept of the mastermind particularly stayed with me: the idea that ambitious people can effectively extend their capabilities by surrounding themselves with people who possess different knowledge, experience, and perspectives.
+
+That resonates strongly with how I approach building.
+
+I don't expect one person to know everything. Software engineering, product management, design, finance, marketing, hardware, AI, and business strategy are different disciplines. My instinct has increasingly become to **connect them rather than stay inside one box**.
+
+The book's discussion of excuses and indecision also made me more conscious of how easily thinking can become a substitute for doing.
+
+Ideas are cheap.
+
+A decision followed by sustained execution is much rarer.
+
+The biggest lesson I took from the book is not simply "think positively." It is closer to:
+
+> **Decide what you are trying to accomplish, develop the mental discipline to keep moving toward it, and deliberately build the environment around you that makes that possible.**
+
+---
+
+## The Black Swan — Nassim Nicholas Taleb
+
+**The book that made me much more suspicious of confident predictions.**
+
+*The Black Swan* changed how I think about uncertainty.
+
+One of its most important lessons for me is that **more information does not necessarily produce better predictions**.
+
+In complex environments, we can collect enormous amounts of historical data and still be fundamentally unprepared for events outside the assumptions of our models.
+
+That idea is especially relevant to technology, startups, markets, and entrepreneurship.
+
+I've become much more interested in the distinction between:
+
+**what can be predicted**
+
+and
+
+**what can be prepared for.**
+
+Taleb's discussion of hindsight also influenced me. After an event happens, humans are remarkably good at constructing explanations that make it seem inevitable.
+
+But an explanation after the fact is not the same thing as a prediction beforehand.
+
+This has made me more cautious about experts who speak with extreme certainty about complex systems.
+
+It has also influenced how I think about entrepreneurship. Instead of believing I can predict exactly which project will succeed, I increasingly think about **creating multiple opportunities for upside while learning quickly from reality**.
+
+That is a very different mindset from believing you can perfectly forecast the future.
+
+---
+
+## Outliers — Malcolm Gladwell
+
+**The book that complicated my definition of success.**
+
+*Outliers* challenged the simple story that successful people are successful purely because they are exceptionally talented.
+
+Gladwell's exploration of opportunity, timing, environment, accumulated practice, culture, and luck made me think much more carefully about the circumstances surrounding achievement.
+
+This doesn't diminish individual effort. If anything, it makes effort more interesting.
+
+Two people can work equally hard while having dramatically different opportunities to convert that effort into an outcome.
+
+That idea has influenced how I interpret founders, engineers, investors, athletes, and other high performers.
+
+When I see someone who has achieved something extraordinary, I try to look beyond the person.
+
+**What environment produced them?
+What opportunities did they encounter?
+Who helped them?
+What happened to be true at the right moment?
+What advantages accumulated before anyone noticed?**
+
+This also connects with my interest in entrepreneurship. I don't want to confuse success with a simple formula of *talent + hard work = outcome*.
+
+There is skill.
+
+There is persistence.
+
+There is environment.
+
+And there is randomness.
+
+Ignoring any one of those produces an incomplete picture.
+
+---
+
+## Range — David Epstein
+
+**The book that gave me a framework for being a generalist.**
+
+*Range* probably describes one of the strongest patterns in how I naturally work.
+
+I've never been particularly interested in staying inside a single discipline.
+
+I've moved between software engineering, product design, AI/ML, finance, hardware, robotics, aerospace, business models, political technology, and consumer applications.
+
+For a long time, that could look like a lack of focus.
+
+*Range* gave me a different interpretation.
+
+Sometimes the ability to move between domains is itself an advantage.
+
+Knowledge from one field can become a useful mental model in another.
+
+That is increasingly how I see my own development.
+
+Software teaches me systems.
+
+Product teaches me users.
+
+Finance teaches me incentives and capital.
+
+Design teaches me interaction and perception.
+
+Hardware teaches me physical constraints.
+
+AI teaches me new ways of thinking about computation.
+
+Entrepreneurship forces all of those things to interact with reality.
+
+The value isn't necessarily becoming the world's greatest specialist in every field.
+
+It is becoming someone who can **connect ideas that specialists in isolated fields may not naturally connect**.
+
+That has become one of the defining principles behind how I learn.
+
+---
+
+## Digital Fortress — Dan Brown
+
+**The fiction book that made technology feel like a battlefield of ideas.**
+
+*Digital Fortress* influenced me differently from the non-fiction books on this shelf.
+
+I don't think of it primarily as a book that gave me a startup framework or a business model. Its influence was more subtle: it contributed to my fascination with **technology, cryptography, information, security, institutions, and the power that sits behind seemingly invisible systems**.
+
+It helped reinforce an intuition I've had for a long time:
+
+> **The most important parts of technology are often the things ordinary users never see.**
+
+Behind an interface are algorithms, databases, infrastructure, security assumptions, protocols, incentives, and people making decisions.
+
+That perspective fits naturally with my interest in software engineering and emerging technologies. I became interested not just in using technology, but in understanding what happens underneath it—and eventually in building those systems myself.
+
+It also reminded me that technology is never purely technical.
+
+Once information becomes powerful enough, questions about **control, trust, privacy, security, and institutional power** inevitably follow.
+
+---
+
+# What These Books Have Done to My Thinking
+
+Looking at these books together, I can see several principles that repeatedly appear in the way I approach problems.
+
+### 1. I look for assumptions before solutions.
+
+*Zero to One* taught me to ask whether the underlying assumption is wrong before trying to optimize the existing system.
+
+### 2. I break large markets into smaller activities.
+
+*Unlocking the Customer Value Chain* taught me to look for the individual job or action that can be decoupled from an incumbent's larger offering.
+
+### 3. I distrust certainty in complex systems.
+
+*The Black Swan* made me more comfortable saying **"I don't know"** when the environment genuinely cannot be predicted.
+
+### 4. I don't see success as purely meritocratic.
+
+*Outliers* made me pay more attention to timing, opportunity, environment, and luck.
+
+### 5. I embrace being interdisciplinary.
+
+*Range* gave me a framework for something that already seemed natural to me: moving between disciplines and looking for connections between them.
+
+### 6. I think execution matters as much as ideas.
+
+*Think and Grow Rich* reinforced the importance of definite goals, persistence, decision-making, and surrounding yourself with people who expand your capabilities.
+
+### 7. I am interested in what happens underneath the interface.
+
+*Digital Fortress* reinforced my fascination with the invisible systems behind technology: infrastructure, information, security, and power.
+
+---
+
+# The Common Thread
+
+If I had to reduce all of these books to one idea, it would be this:
+
+
+
+When I see a successful person, I wonder what combination of ability, opportunity, timing, environment, and luck produced the outcome.
+
+When I see a prediction, I wonder what assumptions make it possible—and what happens when those assumptions break.
+
+When I encounter a problem in one discipline, I look for a mental model from another discipline that might explain it better.
+
+And when I see something everyone accepts as normal, I increasingly find myself asking:
+
+**"Does it actually have to work this way?"**
+
+That question has probably influenced my thinking more than any individual framework.
+
+These books didn't give me a single philosophy.
+
+They gave me a collection of lenses.
+
+And I use those lenses to decide ** what is worth questioning, and what is worth believing.**
